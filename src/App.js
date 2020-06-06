@@ -67,7 +67,10 @@ class App extends React.Component {
   render() {
     return (
       <StyledMain className="App">
-        <Header handleLanguageChange={this.handleLanguageChange} />
+        <Header
+          handleLanguageChange={this.handleLanguageChange}
+          language={this.state.language}
+        />
         <Switch>
           <Route
             exact
@@ -82,13 +85,7 @@ class App extends React.Component {
           <Route
             exact
             path="/:gameType/:gameArea"
-            render={props => (
-              <Game
-                {...props}
-                restart={this.restartApp}
-                language={this.state.language}
-              />
-            )}
+            render={props => <Game {...props} language={this.state.language} />}
           />
         </Switch>
         <Footer />

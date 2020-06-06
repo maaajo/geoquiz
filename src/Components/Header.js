@@ -14,15 +14,15 @@ const StyledH1 = styled.h1`
   ${tw`text-4xl font-bold text-white font-logo text-center pt-4 antialiased tracking-custom`}
 `;
 
-const StyledButton = styled.button`
-  ${tw`text-white text-sm hover:underline tracking-custom`}
-`;
-
 const StyledLink = styled(Link)`
   ${tw`text-white text-sm hover:underline tracking-custom`}
 `;
 
-const Header = ({ handleLanguageChange }) => {
+const StyledButton = styled.button`
+  ${tw`text-white text-sm hover:underline tracking-custom`}
+`;
+
+const Header = ({ handleLanguageChange, language }) => {
   return (
     <StyledHeader>
       <section className="flex justify-between pt-1">
@@ -30,9 +30,29 @@ const Header = ({ handleLanguageChange }) => {
           new game
         </StyledLink>
         <div className="pr-3">
-          <StyledButton onClick={handleLanguageChange}>pl</StyledButton>
+          <StyledButton
+            data-language="pl"
+            className={
+              language === 'pl'
+                ? `border-2 border-white rounded-lg px-1 transition-all duration-200 ease-in`
+                : null
+            }
+            onClick={handleLanguageChange}
+          >
+            pl
+          </StyledButton>
           <span className="text-white"> | </span>
-          <StyledButton onClick={handleLanguageChange}>en</StyledButton>
+          <StyledButton
+            data-language="en"
+            className={
+              language === 'en'
+                ? `border-2 border-white rounded-lg px-1 transition-all duration-200 ease-in`
+                : null
+            }
+            onClick={handleLanguageChange}
+          >
+            en
+          </StyledButton>
         </div>
       </section>
       <StyledH1>
