@@ -1,0 +1,33 @@
+@tailwind base;
+
+@tailwind components;
+
+.screen-header {
+  @apply tracking-custom my-16 text-center text-3xl font-semibold text-white px-3;
+}
+
+.button {
+  @apply border-solid border-4 border-darkBrown rounded-lg bg-brown text-white text-2xl font-semibold tracking-custom shadow-md;
+}
+
+.button-rectangle {
+  width: 150px;
+  height: 100px;
+  @apply button;
+}
+
+.button-rectangle:first-child {
+  @apply mr-4;
+}
+
+.button-wide {
+  width: 80%;
+  height: 45px;
+  @apply button mb-2 rounded-lg text-xl;
+}
+
+.button-wide:last-child {
+  @apply mb-0;
+}
+
+@tailwind utilities;

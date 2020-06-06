@@ -2,37 +2,72 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.fade-appear {
+  opacity: 0;
+  z-index: 1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.fade-appear.fade-appear-active {
+  opacity: 1;
+  transition: opacity 1000ms linear;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
 }
 
-.App-link {
-  color: #61dafb;
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 1000ms linear;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fade-exit {
+  opacity: 0;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0;
+  transition: opacity 1000ms linear;
+}
+
+.fade-exit-done {
+  opacity: 0;
+}
+
+.slide-enter {
+  opacity: 0;
+  transform: scale(0.97);
+  z-index: 1;
+}
+
+.slide-enter.slide-enter-active {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+  transition: opacity 300ms linear, transform 300ms ease-in-out;
+}
+
+.slide-exit {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}
+
+.slide-exit.slide-exit-active {
+  opacity: 0;
+  transform: scale(0.97) translateY(5px);
+  transition: opacity 150ms linear, transform 150ms ease-out;
+}
+
+.slide-exit-done {
+  opacity: 0;
+}
+
+.good {
+  border: 2px solid green;
+  transition: border 200ms linear;
+}
+
+.bad {
+  border: 2px solid red;
+  transition: border 200ms linear;
 }
