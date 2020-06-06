@@ -1,30 +1,27 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import tw from 'twin.macro';
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+
+const StyledLink = styled(Link)`
+  ${tw`flex justify-center items-center`}
+`;
 
 const OptionButton = ({
-  onClick,
   content = '',
-  datasetName = '',
-  datasetValue = '',
-  buttonStyle = 'rectangle'
+  buttonStyle = 'rectangle',
+  urlParam = ''
 }) => {
-  let datasetVariable;
-  if (datasetName) {
-    datasetVariable = { [`data-${datasetName}`]: datasetValue };
-  }
-  const buttonName = content.toLowerCase().replace(/\s/g, '');
   return (
-    <button
+    <StyledLink
+      to={`/${urlParam}`}
       className={
         buttonStyle === 'rectangle' ? 'button-rectangle' : 'button-wide'
       }
-      type="button"
-      name={`game-option-${buttonName}`}
-      onClick={onClick}
-      {...datasetVariable}
     >
-      {content}
-    </button>
+      <span>{content}</span>
+    </StyledLink>
   );
 };
 

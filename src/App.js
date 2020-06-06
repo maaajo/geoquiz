@@ -6,6 +6,7 @@ import tw from 'twin.macro';
 import styled from 'styled-components';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
+import { Switch, Route } from 'react-router-dom';
 import './Assets/styles.css';
 
 const StyledMain = styled.main`
@@ -40,7 +41,6 @@ class App extends React.Component {
   }
 
   handleGameOptionClick(e) {
-    console.log(e.target);
     this.setState({
       gameOption: e.target.dataset.gameOption,
       initialScreen: false,
@@ -67,27 +67,30 @@ class App extends React.Component {
   render() {
     return (
       <StyledMain className="App">
-        <Header
-          startNewGame={this.restartApp}
-          handleLanguageChange={this.handleLanguageChange}
-        />
-        {this.state.initialScreen ? (
-          <InitialScreen handleGameOptionClick={this.handleGameOptionClick} />
-        ) : null}
-        {this.state.areaSelectionScreen ? (
-          <GameOptions
-            handleAreaSelectionClick={this.handleAreaSelectionClick}
-            gameType={this.state.gameOption}
+        <Header handleLanguageChange={this.handleLanguageChange} />
+        <Switch>
+          <Route
+            exact
+            path="/"
+            render={props => <InitialScreen {...props} />}
           />
-        ) : null}
-        {this.state.gameScreen ? (
-          <Game
-            option={this.state.gameOption}
-            area={this.state.area}
-            restart={this.restartApp}
-            language={this.state.language}
+          <Route
+            exact
+            path="/:gameType"
+            render={props => <GameOptions {...props} />}
           />
-        ) : null}
+          <Route
+            exact
+            path="/:gameType/:gameArea"
+            render={props => (
+              <Game
+                {...props}
+                restart={this.restartApp}
+                language={this.state.language}
+              />
+            )}
+          />
+        </Switch>
         <Footer />
       </StyledMain>
     );

@@ -9,6 +9,7 @@ import {
   shuffleArray,
   roundNumber
 } from '../../Utils/gameUtils';
+import OptionButton from '../../Components/OptionButton';
 import { countryTranslations } from '../../Translations/countryTranslations';
 import { AiFillCheckCircle, AiFillCloseCircle } from 'react-icons/ai';
 
@@ -40,13 +41,13 @@ class Game extends React.Component {
   async componentDidMount() {
     try {
       this.setState(currState => ({ isLoading: !currState.isLoading }));
-      const geoData = await this.getData(this.props.area);
+      const geoData = await this.getData(this.props.match.params.gameArea);
       this.setState(currState => ({
         isLoading: !currState.isLoading
       }));
       let dataUserArea;
       let dataWorld;
-      if (this.props.area.toLowerCase() === 'world') {
+      if (this.props.match.params.gameArea.toLowerCase() === 'world') {
         dataUserArea = geoData;
         dataWorld = geoData;
       } else {
@@ -55,12 +56,12 @@ class Game extends React.Component {
       }
       const gamePreparedData = this.createGameArray(
         dataUserArea.data,
-        this.props.option
+        this.props.match.params.gameType
       );
       this.gamePreparedData = gamePreparedData;
       this.gamePreparedDataWorld = this.createGameArray(
         dataWorld.data,
-        this.props.option
+        this.props.match.params.gameType
       );
       this.gameArrayRemained = this.gamePreparedData.slice();
       this.numberOfQuestions = this.gamePreparedData.length - 1;
@@ -321,7 +322,7 @@ class Game extends React.Component {
               Question: {this.state.currentQuestionNumber} /{' '}
               {this.numberOfQuestions + 1}
             </h3>
-            {this.props.option === 'capitals' ? (
+            {this.props.match.params.gameType === 'capitals' ? (
               <p className="my-10 text-white tracking-custom text-xl text-left font-semibold">
                 What is the capital of{' '}
                 {countryTranslations[this.answer.name][this.props.language]}?
@@ -340,7 +341,9 @@ class Game extends React.Component {
                     className="button-wide w-full"
                     key={index}
                     style={
-                      this.props.option === 'flags' ? flagStyle(question) : null
+                      this.props.match.params.gameType === 'flags'
+                        ? flagStyle(question)
+                        : null
                     }
                     name={`game-question-${index}`}
                     data-user-answer={answerNumber}
@@ -355,7 +358,7 @@ class Game extends React.Component {
                         data-user-answer={answerNumber}
                         className="text-base"
                       >
-                        {this.props.option === 'capitals'
+                        {this.props.match.params.gameType === 'capitals'
                           ? countryTranslations[question][this.props.language]
                           : null}
                       </span>
@@ -376,23 +379,21 @@ class Game extends React.Component {
             <h3 className="screen-header mb-0">Congratulations!</h3>
             <p className="screen-header mt-0 mb-2">Your score is:</p>
             <div className="flex justify-center">
-              <div className="bg-lightGreen text-white flex flex-col justify-center items-center w-20 h-16 rounded-lg shadow-md mr-2">
+              <div className="bg-lightGreen text-white flex flex-col justify-center items-center w-20 h-16 rounded-lg shadow-lg mr-2">
                 <p className="font-semibold text-2xl ">
                   {this.state.correctAnswers}
                 </p>
-                <p className="font-medium text-xs">correct</p>
+                <p className="font-medium text-sm">correct</p>
               </div>
-              <div className="bg-red text-white flex flex-col justify-center items-center w-20 h-16 rounded-lg shadow-md">
+              <div className="bg-red text-white flex flex-col justify-center items-center w-20 h-16 rounded-lg shadow-lg">
                 <p className="font-semibold text-2xl">
                   {this.state.wrongCountries.length}
                 </p>
-                <p className="font-medium text-xs">wrong</p>
+                <p className="font-medium text-sm">wrong</p>
               </div>
             </div>
             <div className="flex flex-col items-center mt-6">
-              <button className="button-wide" onClick={this.props.restart}>
-                Start Again
-              </button>
+              <OptionButton content="Start new game" buttonStyle="wide" />
               <button
                 className="button-wide"
                 onClick={() => this.restartGameWithTheSameChoice(false)}

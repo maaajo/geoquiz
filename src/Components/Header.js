@@ -1,6 +1,7 @@
 import React from 'react';
 import tw from 'twin.macro';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 const StyledHeader = styled.header`
   height: 120px;
@@ -17,20 +18,26 @@ const StyledButton = styled.button`
   ${tw`text-white text-sm hover:underline tracking-custom`}
 `;
 
-const Header = ({ startNewGame, handleLanguageChange }) => {
+const StyledLink = styled(Link)`
+  ${tw`text-white text-sm hover:underline tracking-custom`}
+`;
+
+const Header = ({ handleLanguageChange }) => {
   return (
     <StyledHeader>
-      <section className="flex justify-between">
-        <StyledButton onClick={startNewGame} className="pl-3">
+      <section className="flex justify-between pt-1">
+        <StyledLink to="/" className="pl-3">
           new game
-        </StyledButton>
+        </StyledLink>
         <div className="pr-3">
           <StyledButton onClick={handleLanguageChange}>pl</StyledButton>
           <span className="text-white"> | </span>
           <StyledButton onClick={handleLanguageChange}>en</StyledButton>
         </div>
       </section>
-      <StyledH1>GeoQuiz</StyledH1>
+      <StyledH1>
+        <Link to="/">GeoQuiz</Link>
+      </StyledH1>
     </StyledHeader>
   );
 };

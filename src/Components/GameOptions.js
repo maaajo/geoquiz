@@ -1,23 +1,21 @@
 import React from 'react';
 import OptionButton from './OptionButton';
-import { toProperCase } from '../Utils/gameUtils';
 import { gameRegions } from '../GameSettings/gameSettings';
+import { toProperCase } from '../Utils/gameUtils';
 
-function GameOptions({ handleAreaSelectionClick, gameType }) {
+function GameOptions(props) {
   return (
     <section>
       <h3 className="screen-header">{`${toProperCase(
-        gameType
+        props.match.params.gameType
       )} for which region?`}</h3>
       <div className="flex flex-col items-center mb-8">
-        {gameRegions.map(({ content, datasetName, datasetValue }) => (
+        {gameRegions.map(({ content, datasetValue }) => (
           <OptionButton
             key={datasetValue}
-            onClick={handleAreaSelectionClick}
             content={content}
-            datasetName={datasetName}
-            datasetValue={datasetValue}
             buttonStyle="wide"
+            urlParam={`${props.match.params.gameType}/${content.toLowerCase()}`}
           />
         ))}
       </div>
