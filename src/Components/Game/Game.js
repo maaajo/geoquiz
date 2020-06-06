@@ -129,7 +129,6 @@ class Game extends React.Component {
   };
 
   handleUserAnswer = e => {
-    console.log(this.answer);
     const userAnswer = this.state.answers.filter(
       ({ answerNumber }) =>
         answerNumber === parseInt(e.target.dataset.userAnswer)
