@@ -16,10 +16,6 @@
   @apply button;
 }
 
-.button-rectangle:first-child {
-  @apply mr-4;
-}
-
 .button-wide {
   width: 80%;
   height: 45px;

@@ -34,8 +34,8 @@ class Game extends React.Component {
       startGameTimestamp: Date.now(),
       stopGameTimestamp: ''
     };
-    this.answerDelay = 100;
-    this.handleUserAnswerThrottled = throttle(this.handleUserAnswer, 300);
+    this.answerDelay = 500;
+    this.handleUserAnswerThrottled = throttle(this.handleUserAnswer, 500);
   }
 
   async componentDidMount() {
@@ -307,10 +307,11 @@ class Game extends React.Component {
   render() {
     const flagStyle = flagUrl => ({
       backgroundImage: `url(${flagUrl})`,
-      width: '40px',
-      height: '30px',
-      backgroundSize: 'contain',
-      backgroundRepeat: 'no-repeat'
+      flexBasis: '43%'
+      // width: '40px',
+      // height: '30px',
+      // backgroundSize: 'contain',
+      // backgroundRepeat: 'no-repeat'
     });
     return (
       <section className="mx-8">
@@ -327,17 +328,27 @@ class Game extends React.Component {
                 {countryTranslations[this.answer.name][this.props.language]}?
               </p>
             ) : (
-              <p>
+              <p className="my-10 text-white tracking-custom text-xl text-left font-semibold">
                 Please select the flag of{' '}
                 {countryTranslations[this.answer.name][this.props.language]}
               </p>
             )}
-            <div>
+            <div
+              className={`${
+                this.props.match.params.gameType === 'flags'
+                  ? `flex flex-wrap justify-between`
+                  : null
+              }`}
+            >
               {this.state.answers.map(({ answerNumber, question }, index) => {
                 return (
                   <button
                     type="button"
-                    className="button-wide w-full"
+                    className={`${
+                      this.props.match.params.gameType === 'flags'
+                        ? `w-32 h-24 bg-center bg-contain bg-no-repeat m-2`
+                        : `button-wide w-full`
+                    }`}
                     key={index}
                     style={
                       this.props.match.params.gameType === 'flags'
