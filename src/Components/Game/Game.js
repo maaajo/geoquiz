@@ -10,8 +10,7 @@ import {
   roundNumber
 } from '../../Utils/gameUtils';
 import OptionButton from '../../Components/OptionButton';
-import { countryTranslations } from '../../Translations/countryTranslations';
-import { AiFillCheckCircle, AiFillCloseCircle } from 'react-icons/ai';
+import GameScreen from './GameScreen';
 
 class Game extends React.Component {
   constructor(props) {
@@ -272,31 +271,6 @@ class Game extends React.Component {
     return `${roundNumber(score, 2)}%`;
   }
 
-  getAnswerButtonHighlight = (buttonAnswer, answerPosted, answer, gameType) => {
-    if (answerPosted) {
-      switch (gameType.toLowerCase()) {
-        case 'capitals':
-          if (buttonAnswer.toLowerCase() === answer.toLowerCase()) {
-            return (
-              <AiFillCheckCircle
-                size="20px"
-                className="inline text-lightGreen"
-              />
-            );
-          }
-          return <AiFillCloseCircle size="20px" className="inline text-red" />;
-        case 'flags':
-          if (buttonAnswer.toLowerCase() === answer.toLowerCase()) {
-            return 'flag-highlight-correct';
-          }
-          return 'flag-highlight-incorrect';
-        default:
-          return 'something went wrong';
-      }
-    }
-    return null;
-  };
-
   restartGameWithTheSameChoice = (onlyBadOnes = false) => {
     if (onlyBadOnes) {
       this.gameArrayRemained = this.gamePreparedData
@@ -318,88 +292,21 @@ class Game extends React.Component {
   };
 
   render() {
-    const flagStyle = flagUrl => ({
-      backgroundImage: `url(${flagUrl})`,
-      flexBasis: '43%'
-      // width: '40px',
-      // height: '30px',
-      // backgroundSize: 'contain',
-      // backgroundRepeat: 'no-repeat'
-    });
     return (
       <section className="mx-8">
         {this.state.isLoading ? <p>Loading</p> : null}
         {this.state.gameStart ? (
-          <>
-            <h3 className="screen-header text-left p-0 mb-0 pb-1 border-b-2 border-dashed border-grey">
-              Question: {this.state.currentQuestionNumber} /{' '}
-              {this.numberOfQuestions + 1}
-            </h3>
-            {this.props.match.params.gameType === 'capitals' ? (
-              <p className="my-10 text-white tracking-custom text-xl text-left font-semibold">
-                What is the capital of{' '}
-                {countryTranslations[this.answer.name][this.props.language]}?
-              </p>
-            ) : (
-              <p className="my-10 text-white tracking-custom text-xl text-left font-semibold">
-                Please select the flag of{' '}
-                {countryTranslations[this.answer.name][this.props.language]}
-              </p>
-            )}
-            <div
-              className={`${
-                this.props.match.params.gameType === 'flags'
-                  ? `flex flex-wrap justify-between`
-                  : null
-              }`}
-            >
-              {this.state.answers.map(({ answerNumber, question }, index) => {
-                const buttonHighlight = this.getAnswerButtonHighlight(
-                  question,
-                  this.state.answerPosted,
-                  this.answer.question,
-                  this.props.match.params.gameType
-                );
-                return (
-                  <button
-                    type="button"
-                    className={`${
-                      this.props.match.params.gameType === 'flags'
-                        ? `w-32 h-24 bg-center bg-contain bg-no-repeat m-2 ${buttonHighlight}`
-                        : `button-wide w-full`
-                    }`}
-                    key={index}
-                    style={
-                      this.props.match.params.gameType === 'flags'
-                        ? flagStyle(question)
-                        : null
-                    }
-                    name={`game-question-${index}`}
-                    data-user-answer={answerNumber}
-                    onClick={this.handleUserAnswerThrottled}
-                    disabled={this.state.answerPosted}
-                  >
-                    <span
-                      data-user-answer={answerNumber}
-                      className="flex justify-between items-center mx-6 font-medium"
-                    >
-                      <span
-                        data-user-answer={answerNumber}
-                        className="text-base"
-                      >
-                        {this.props.match.params.gameType === 'capitals'
-                          ? countryTranslations[question][this.props.language]
-                          : null}
-                      </span>
-                      {this.props.match.params.gameType === 'capitals'
-                        ? buttonHighlight
-                        : null}
-                    </span>
-                  </button>
-                );
-              })}
-            </div>
-          </>
+          <GameScreen
+            gameType={this.props.match.params.gameType}
+            currentQuestionNumber={this.state.currentQuestionNumber}
+            numberOfQuestions={this.numberOfQuestions}
+            countryName={this.answer.name}
+            language={this.props.language}
+            answers={this.state.answers}
+            answerPosted={this.state.answerPosted}
+            correctAnswer={this.answer.question}
+            handleUserAnswerThrottled={this.handleUserAnswerThrottled}
+          />
         ) : null}
         {this.state.gameStop ? (
           <section>
