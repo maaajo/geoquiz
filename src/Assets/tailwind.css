@@ -10,6 +10,18 @@
   @apply border-solid border-4 border-darkBrown rounded-lg bg-brown text-white text-2xl font-semibold tracking-custom shadow-md;
 }
 
+.flag-highlight {
+  @apply rounded-lg border-4 transition-all duration-200 ease-linear;
+}
+
+.flag-highlight-correct {
+  @apply flag-highlight border-lightGreen;
+}
+
+.flag-highlight-incorrect {
+  @apply flag-highlight border-red;
+}
+
 .button-rectangle {
   width: 150px;
   height: 100px;

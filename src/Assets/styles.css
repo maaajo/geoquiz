@@ -639,6 +639,36 @@ video {
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
+.flag-highlight {
+  border-radius: 0.5rem;
+  border-width: 4px;
+  transition-property: all;
+  transition-duration: 200ms;
+  transition-timing-function: linear;
+}
+
+.flag-highlight-correct {
+  border-radius: 0.5rem;
+  border-width: 4px;
+  transition-property: all;
+  transition-duration: 200ms;
+  transition-timing-function: linear;
+  --border-opacity: 1;
+  border-color: #6CAEB2;
+  border-color: rgba(108, 174, 178, var(--border-opacity));
+}
+
+.flag-highlight-incorrect {
+  border-radius: 0.5rem;
+  border-width: 4px;
+  transition-property: all;
+  transition-duration: 200ms;
+  transition-timing-function: linear;
+  --border-opacity: 1;
+  border-color: #E95D69;
+  border-color: rgba(233, 93, 105, var(--border-opacity));
+}
+
 .button-rectangle {
   width: 150px;
   height: 100px;

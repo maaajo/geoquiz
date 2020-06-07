@@ -34,8 +34,8 @@ class Game extends React.Component {
       startGameTimestamp: Date.now(),
       stopGameTimestamp: ''
     };
-    this.answerDelay = 500;
-    this.handleUserAnswerThrottled = throttle(this.handleUserAnswer, 500);
+    this.answerDelay = 800;
+    this.handleUserAnswerThrottled = throttle(this.handleUserAnswer, 800);
   }
 
   async componentDidMount() {
@@ -272,14 +272,27 @@ class Game extends React.Component {
     return `${roundNumber(score, 2)}%`;
   }
 
-  getAnswerButtonHighlight = (buttonAnswer, answerPosted, answer) => {
+  getAnswerButtonHighlight = (buttonAnswer, answerPosted, answer, gameType) => {
     if (answerPosted) {
-      if (buttonAnswer.toLowerCase() === answer.toLowerCase()) {
-        return (
-          <AiFillCheckCircle size="20px" className="inline text-lightGreen" />
-        );
+      switch (gameType.toLowerCase()) {
+        case 'capitals':
+          if (buttonAnswer.toLowerCase() === answer.toLowerCase()) {
+            return (
+              <AiFillCheckCircle
+                size="20px"
+                className="inline text-lightGreen"
+              />
+            );
+          }
+          return <AiFillCloseCircle size="20px" className="inline text-red" />;
+        case 'flags':
+          if (buttonAnswer.toLowerCase() === answer.toLowerCase()) {
+            return 'flag-highlight-correct';
+          }
+          return 'flag-highlight-incorrect';
+        default:
+          return 'something went wrong';
       }
-      return <AiFillCloseCircle size="20px" className="inline text-red" />;
     }
     return null;
   };
@@ -341,12 +354,18 @@ class Game extends React.Component {
               }`}
             >
               {this.state.answers.map(({ answerNumber, question }, index) => {
+                const buttonHighlight = this.getAnswerButtonHighlight(
+                  question,
+                  this.state.answerPosted,
+                  this.answer.question,
+                  this.props.match.params.gameType
+                );
                 return (
                   <button
                     type="button"
                     className={`${
                       this.props.match.params.gameType === 'flags'
-                        ? `w-32 h-24 bg-center bg-contain bg-no-repeat m-2`
+                        ? `w-32 h-24 bg-center bg-contain bg-no-repeat m-2 ${buttonHighlight}`
                         : `button-wide w-full`
                     }`}
                     key={index}
@@ -372,11 +391,9 @@ class Game extends React.Component {
                           ? countryTranslations[question][this.props.language]
                           : null}
                       </span>
-                      {this.getAnswerButtonHighlight(
-                        question,
-                        this.state.answerPosted,
-                        this.answer.question
-                      )}
+                      {this.props.match.params.gameType === 'capitals'
+                        ? buttonHighlight
+                        : null}
                     </span>
                   </button>
                 );
