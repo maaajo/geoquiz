@@ -14,10 +14,6 @@ const StyledH1 = styled.h1`
   ${tw`text-4xl font-bold text-white font-logo text-center pt-4 antialiased tracking-custom`}
 `;
 
-const StyledLink = styled(Link)`
-  ${tw`text-white text-sm hover:underline tracking-custom`}
-`;
-
 const StyledButton = styled.button`
   ${tw`text-white text-sm hover:underline tracking-custom`}
 `;
@@ -25,10 +21,7 @@ const StyledButton = styled.button`
 const Header = ({ handleLanguageChange, language }) => {
   return (
     <StyledHeader>
-      <section className="flex justify-between pt-1">
-        <StyledLink to="/" className="pl-3">
-          new game
-        </StyledLink>
+      <section className="flex justify-end pt-1">
         <div className="pr-3">
           <StyledButton
             data-language="pl"

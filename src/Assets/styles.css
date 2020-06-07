@@ -690,6 +690,10 @@ video {
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
+.button-rectangle:first-child {
+  margin-right: 8px;
+}
+
 .button-wide {
   width: 80%;
   height: 45px;
