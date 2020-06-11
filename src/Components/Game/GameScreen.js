@@ -1,6 +1,7 @@
 import React from 'react';
 import { countryTranslations } from '../../Translations/countryTranslations';
 import { AiFillCheckCircle, AiFillCloseCircle } from 'react-icons/ai';
+import { motion } from 'framer-motion';
 
 const getAnswerButtonHighlight = (
   buttonAnswer,
@@ -13,10 +14,19 @@ const getAnswerButtonHighlight = (
       case 'capitals':
         if (buttonAnswer.toLowerCase() === answer.toLowerCase()) {
           return (
-            <AiFillCheckCircle size="20px" className="inline text-lightGreen" />
+            <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+              <AiFillCheckCircle
+                size="20px"
+                className="inline text-lightGreen"
+              />
+            </motion.span>
           );
         }
-        return <AiFillCloseCircle size="20px" className="inline text-red" />;
+        return (
+          <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+            <AiFillCloseCircle size="20px" className="inline text-red" />
+          </motion.span>
+        );
       case 'flags':
         if (buttonAnswer.toLowerCase() === answer.toLowerCase()) {
           return 'flag-highlight-correct';

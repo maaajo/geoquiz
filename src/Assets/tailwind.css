@@ -45,8 +45,4 @@
   @apply button mb-2 rounded-lg text-xl;
 }
 
-.button-wide:last-child {
-  @apply mb-0;
-}
-
 @tailwind utilities;
