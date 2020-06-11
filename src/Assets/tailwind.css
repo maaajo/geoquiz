@@ -32,6 +32,13 @@
   margin-right: 8px;
 }
 
+.button-rectangle:active,
+.button-rectangle:focus,
+.button-wide:active,
+.button-wide:focus {
+  @apply shadow-outline;
+}
+
 .button-wide {
   width: 80%;
   height: 45px;

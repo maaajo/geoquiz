@@ -9,8 +9,8 @@ import {
   shuffleArray,
   roundNumber
 } from '../../Utils/gameUtils';
-import OptionButton from '../../Components/OptionButton';
 import GameScreen from './GameScreen';
+import ScoreScreen from './ScoreScreen';
 
 class Game extends React.Component {
   constructor(props) {
@@ -271,7 +271,7 @@ class Game extends React.Component {
     return `${roundNumber(score, 2)}%`;
   }
 
-  restartGameWithTheSameChoice = (onlyBadOnes = false) => {
+  restartGame = (onlyBadOnes = false) => {
     if (onlyBadOnes) {
       this.gameArrayRemained = this.gamePreparedData
         .slice()
@@ -309,41 +309,11 @@ class Game extends React.Component {
           />
         ) : null}
         {this.state.gameStop ? (
-          <section>
-            <h3 className="screen-header mb-0">Congratulations!</h3>
-            <p className="screen-header mt-0 mb-2">Your score is:</p>
-            <div className="flex justify-center">
-              <div className="bg-lightGreen text-white flex flex-col justify-center items-center w-20 h-16 rounded-lg shadow-lg mr-2">
-                <p className="font-semibold text-2xl ">
-                  {this.state.correctAnswers}
-                </p>
-                <p className="font-medium text-sm">correct</p>
-              </div>
-              <div className="bg-red text-white flex flex-col justify-center items-center w-20 h-16 rounded-lg shadow-lg">
-                <p className="font-semibold text-2xl">
-                  {this.state.wrongCountries.length}
-                </p>
-                <p className="font-medium text-sm">wrong</p>
-              </div>
-            </div>
-            <div className="flex flex-col items-center mt-6">
-              <OptionButton content="Start new game" buttonStyle="wide" />
-              <button
-                className="button-wide"
-                onClick={() => this.restartGameWithTheSameChoice(false)}
-              >
-                Start Again the same
-              </button>
-              {this.state.wrongCountries.length > 0 ? (
-                <button
-                  className="button-wide"
-                  onClick={() => this.restartGameWithTheSameChoice(true)}
-                >
-                  Learn only wrong ones
-                </button>
-              ) : null}
-            </div>
-          </section>
+          <ScoreScreen
+            correctAnswers={this.state.correctAnswers}
+            wrongCountries={this.state.wrongCountries.length}
+            restartGame={this.restartGame}
+          />
         ) : null}
       </section>
     );
