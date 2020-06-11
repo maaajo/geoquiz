@@ -50,8 +50,8 @@ class Game extends React.Component {
   }
 
   async getData(userArea) {
-    const apiEndPointSelected = `https://restcountries.eu/rest/v2/region/${userArea}`;
-    const apiEndPointAll = 'https://restcountries.eu/rest/v2/all';
+    const apiEndPointSelected = `${process.env.REACT_APP_API_ENDPOINT_SPECIFIC}${userArea}`;
+    const apiEndPointAll = process.env.REACT_APP_API_ENDPOINT_ALL;
     if (userArea.toLowerCase() === 'world') {
       return await axios.get(apiEndPointAll);
     }
