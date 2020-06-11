@@ -37,6 +37,30 @@ class Game extends React.Component {
     this.handleUserAnswerThrottled = throttle(this.handleUserAnswer, 800);
   }
 
+  calculateGameScore(correctAnswers, questionNumber) {
+    if (questionNumber === 1) {
+      return 0;
+    } else {
+      return correctAnswers / (questionNumber - 1);
+    }
+  }
+
+  formatGameScore(score) {
+    return `${roundNumber(score, 2)}%`;
+  }
+
+  async getData(userArea) {
+    const apiEndPointSelected = `https://restcountries.eu/rest/v2/region/${userArea}`;
+    const apiEndPointAll = 'https://restcountries.eu/rest/v2/all';
+    if (userArea.toLowerCase() === 'world') {
+      return await axios.get(apiEndPointAll);
+    }
+    return await Promise.all([
+      axios.get(apiEndPointSelected),
+      axios.get(apiEndPointAll)
+    ]);
+  }
+
   async componentDidMount() {
     try {
       this.setState(currState => ({ isLoading: !currState.isLoading }));
@@ -245,30 +269,6 @@ class Game extends React.Component {
     } else {
       this.stopRound();
     }
-  }
-
-  async getData(userArea) {
-    const apiEndPointSelected = `https://restcountries.eu/rest/v2/region/${userArea}`;
-    const apiEndPointAll = 'https://restcountries.eu/rest/v2/all';
-    if (userArea.toLowerCase() === 'world') {
-      return await axios.get(apiEndPointAll);
-    }
-    return await Promise.all([
-      axios.get(apiEndPointSelected),
-      axios.get(apiEndPointAll)
-    ]);
-  }
-
-  calculateGameScore(correctAnswers, questionNumber) {
-    if (questionNumber === 1) {
-      return 0;
-    } else {
-      return correctAnswers / (questionNumber - 1);
-    }
-  }
-
-  formatGameScore(score) {
-    return `${roundNumber(score, 2)}%`;
   }
 
   restartGame = (onlyBadOnes = false) => {
