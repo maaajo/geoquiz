@@ -34,8 +34,8 @@ class Game extends React.Component {
       startGameTimestamp: Date.now(),
       stopGameTimestamp: ''
     };
-    this.answerDelay = 800;
-    this.handleUserAnswerThrottled = throttle(this.handleUserAnswer, 800);
+    this.answerDelay = 600;
+    this.handleUserAnswerThrottled = throttle(this.handleUserAnswer, 600);
   }
 
   calculateGameScore(correctAnswers, questionNumber) {
@@ -295,9 +295,10 @@ class Game extends React.Component {
   render() {
     return (
       <motion.section
-        initial={{ x: '100vw' }}
+        initial={{ x: 1000 }}
         animate={{ x: 0 }}
-        transition={{ duration: 0.2, type: 'tween', delay: 0.2 }}
+        exit={{ x: -1000 }}
+        transition={{ duration: 0.3 }}
         className="mx-8"
       >
         {this.state.isLoading ? <p>Loading</p> : null}

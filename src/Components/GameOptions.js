@@ -7,9 +7,10 @@ import { motion } from 'framer-motion';
 function GameOptions(props) {
   return (
     <motion.section
-      initial={{ x: '100vw' }}
+      initial={{ x: 1000 }}
       animate={{ x: 0 }}
-      transition={{ duration: 0.2, type: 'tween', delay: 0.2 }}
+      exit={{ x: -1000 }}
+      transition={{ duration: 0.3 }}
     >
       <h3 className="screen-header">{`${toProperCase(
         props.match.params.gameType

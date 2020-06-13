@@ -6,7 +6,8 @@ import tw from 'twin.macro';
 import styled from 'styled-components';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, withRouter } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
 import './Assets/styles.css';
 
 const StyledMain = styled.main`
@@ -71,27 +72,34 @@ class App extends React.Component {
           handleLanguageChange={this.handleLanguageChange}
           language={this.state.language}
         />
-        <Switch>
-          <Route
-            exact
-            path="/"
-            render={props => <InitialScreen {...props} />}
-          />
-          <Route
-            exact
-            path="/:gameType"
-            render={props => <GameOptions {...props} />}
-          />
-          <Route
-            exact
-            path="/:gameType/:gameArea"
-            render={props => <Game {...props} language={this.state.language} />}
-          />
-        </Switch>
+        <AnimatePresence exitBeforeEnter>
+          <Switch
+            location={this.props.location}
+            key={this.props.location.pathname}
+          >
+            <Route
+              exact
+              path="/"
+              render={props => <InitialScreen {...props} />}
+            />
+            <Route
+              exact
+              path="/:gameType"
+              render={props => <GameOptions {...props} />}
+            />
+            <Route
+              exact
+              path="/:gameType/:gameArea"
+              render={props => (
+                <Game {...props} language={this.state.language} />
+              )}
+            />
+          </Switch>
+        </AnimatePresence>
         <Footer />
       </StyledMain>
     );
   }
 }
 
-export default App;
+export default withRouter(App);

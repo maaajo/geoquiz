@@ -12,9 +12,10 @@ const StyledDiv = styled.div`
 function InitialScreen() {
   return (
     <motion.section
-      initial={{ x: '100vw' }}
+      initial={{ x: 1000 }}
       animate={{ x: 0 }}
-      transition={{ duration: 0.2, type: 'tween', delay: 0.2 }}
+      exit={{ x: -1000 }}
+      transition={{ duration: 0.3 }}
     >
       <h3 className="screen-header">What would you like to learn today?</h3>
       <StyledDiv>

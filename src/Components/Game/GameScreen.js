@@ -14,7 +14,7 @@ const getAnswerButtonHighlight = (
       case 'capitals':
         if (buttonAnswer.toLowerCase() === answer.toLowerCase()) {
           return (
-            <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+            <motion.span initial={{ scale: 0 }} animate={{ scale: 1 }}>
               <AiFillCheckCircle
                 size="20px"
                 className="inline text-lightGreen"
@@ -23,7 +23,7 @@ const getAnswerButtonHighlight = (
           );
         }
         return (
-          <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+          <motion.span initial={{ scale: 0 }} animate={{ scale: 1 }}>
             <AiFillCloseCircle size="20px" className="inline text-red" />
           </motion.span>
         );
@@ -107,8 +107,10 @@ const GameScreen = ({
       <p className="my-10 text-white tracking-custom text-xl text-left font-semibold">
         {`What is the ${
           gameType.toLowerCase() === 'capitals' ? 'capital' : 'flag'
-        } of ${countryNameTranslated}?`}
+        } of `}
+        <span>{countryNameTranslated}</span>?
       </p>
+
       <div
         id="gameQuestions"
         className={
@@ -131,7 +133,9 @@ const GameScreen = ({
           return (
             <button
               type="button"
-              className={getButtonClassNames(gameType, buttonHighlight)}
+              className={`${getButtonClassNames(gameType, buttonHighlight)} ${
+                answerPosted ? 'cursor-not-allowed' : null
+              }`}
               key={index}
               style={getButtonStyle(gameType, currentAnswer)}
               name={`game-question-${index}`}
