@@ -585,7 +585,7 @@ export const countryTranslations = {
   },
   Fiji: {
     en: 'Fiji',
-    pl: 'Fidżii'
+    pl: 'Fidżi'
   },
   Suva: {
     en: 'Suva',
@@ -1653,7 +1653,7 @@ export const countryTranslations = {
   },
   Madrid: {
     en: 'Madrid',
-    pl: 'Madryd'
+    pl: 'Madryt'
   },
   'Sri Lanka': {
     en: 'Sri Lanka',
