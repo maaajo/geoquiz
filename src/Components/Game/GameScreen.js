@@ -109,7 +109,7 @@ const GameScreen = ({
       <p className="my-10 text-white tracking-custom text-xl text-left font-semibold">
         {`${appTranslations.gameScreen.question[language]} ${
           appTranslations.gameScreen.options[gameType.toLowerCase()][language]
-        } of `}
+        } ${appTranslations.gameScreen.helper[language]} `}
         <span>{countryNameTranslated}</span>?
       </p>
 

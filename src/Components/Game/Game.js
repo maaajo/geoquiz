@@ -321,6 +321,7 @@ class Game extends React.Component {
             correctAnswers={this.state.correctAnswers}
             wrongCountries={this.state.wrongCountries.length}
             restartGame={this.restartGame}
+            language={this.props.language}
           />
         ) : null}
       </motion.section>

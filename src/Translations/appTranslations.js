@@ -36,6 +36,7 @@ export const appTranslations = {
       en: 'What is the',
       pl: 'Co jest'
     },
+    helper: { en: 'of', pl: '' },
     options: {
       capitals: { en: 'capital', pl: 'stolicą' },
       flags: { en: 'flag', pl: 'flagą' }
@@ -60,16 +61,16 @@ export const appTranslations = {
     },
     buttons: {
       newGame: {
-        en: 'Start new game',
-        pl: 'Nowa gra'
+        en: 'Home screen',
+        pl: 'Strona główna'
       },
       sameGame: {
-        en: 'Once again',
+        en: 'Start again',
         pl: 'Ponowna gra'
       },
       badOnes: {
-        en: 'Only wrong ones',
-        pl: 'Ucz się tylko złych'
+        en: 'Repeat bad answers',
+        pl: 'Powtórz złe odpowiedzi'
       }
     }
   }

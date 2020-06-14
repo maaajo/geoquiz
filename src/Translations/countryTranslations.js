@@ -1,7 +1,7 @@
 export const countryTranslations = {
   Afghanistan: {
     en: 'Afghanistan',
-    pl: ''
+    pl: 'Afganistanu'
   },
   Kabul: {
     en: 'Kabul',
@@ -9,7 +9,7 @@ export const countryTranslations = {
   },
   'Åland Islands': {
     en: 'Åland Islands',
-    pl: 'Wyspy Alandzkie'
+    pl: 'Wyspy Alandzkich'
   },
   Mariehamn: {
     en: 'Mariehamn',
@@ -17,7 +17,7 @@ export const countryTranslations = {
   },
   Albania: {
     en: 'Albania',
-    pl: 'Albania'
+    pl: 'Albanii'
   },
   Tirana: {
     en: 'Tirana',
@@ -25,7 +25,7 @@ export const countryTranslations = {
   },
   Algeria: {
     en: 'Algeria',
-    pl: 'Algieria'
+    pl: 'Algierii'
   },
   Algiers: {
     en: 'Algiers',
@@ -33,7 +33,7 @@ export const countryTranslations = {
   },
   'American Samoa': {
     en: 'American Samoa',
-    pl: 'Samoa Amerykańskie'
+    pl: 'Samoa Amerykańskiego'
   },
   'Pago Pago': {
     en: 'Pago Pago',
@@ -41,7 +41,7 @@ export const countryTranslations = {
   },
   Andorra: {
     en: 'Andorra',
-    pl: 'Andora'
+    pl: 'Andory'
   },
   'Andorra la Vella': {
     en: 'Andorra la Vella',
@@ -49,7 +49,7 @@ export const countryTranslations = {
   },
   Angola: {
     en: 'Angola',
-    pl: 'Angola'
+    pl: 'Angoli'
   },
   Luanda: {
     en: 'Luanda',
@@ -57,7 +57,7 @@ export const countryTranslations = {
   },
   Anguilla: {
     en: 'Anguilla',
-    pl: 'Anguilla'
+    pl: 'Anguilli'
   },
   'The Valley': {
     en: 'The Valley',
@@ -65,11 +65,11 @@ export const countryTranslations = {
   },
   Antarctica: {
     en: 'Antarctica',
-    pl: 'Antarctica'
+    pl: 'Antarktyda'
   },
   'Antigua and Barbuda': {
     en: 'Antigua and Barbuda',
-    pl: 'Antigua i Barbuda'
+    pl: 'Antigui i Barbudy'
   },
   "Saint John's": {
     en: "Saint John's",
@@ -77,7 +77,7 @@ export const countryTranslations = {
   },
   Argentina: {
     en: 'Argentina',
-    pl: 'Argentyna'
+    pl: 'Argentyny'
   },
   'Buenos Aires': {
     en: 'Buenos Aires',
@@ -85,7 +85,7 @@ export const countryTranslations = {
   },
   Armenia: {
     en: 'Armenia',
-    pl: 'Armenia'
+    pl: 'Armenii'
   },
   Yerevan: {
     en: 'Yerevan',
@@ -93,7 +93,7 @@ export const countryTranslations = {
   },
   Aruba: {
     en: 'Aruba',
-    pl: 'Aruba'
+    pl: 'Aruby'
   },
   Oranjestad: {
     en: 'Oranjestad',
@@ -101,7 +101,7 @@ export const countryTranslations = {
   },
   Australia: {
     en: 'Australia',
-    pl: 'Australia'
+    pl: 'Australii'
   },
   Canberra: {
     en: 'Canberra',
@@ -109,7 +109,7 @@ export const countryTranslations = {
   },
   Austria: {
     en: 'Austria',
-    pl: 'Austria'
+    pl: 'Austrii'
   },
   Vienna: {
     en: 'Vienna',
@@ -117,7 +117,7 @@ export const countryTranslations = {
   },
   Azerbaijan: {
     en: 'Azerbaijan',
-    pl: 'Azerbejdżan'
+    pl: 'Azerbejdżanu'
   },
   Baku: {
     en: 'Baku',
@@ -125,7 +125,7 @@ export const countryTranslations = {
   },
   Bahamas: {
     en: 'Bahamas',
-    pl: 'Bahamy'
+    pl: 'Bahamów'
   },
   Nassau: {
     en: 'Nassau',
@@ -133,7 +133,7 @@ export const countryTranslations = {
   },
   Bahrain: {
     en: 'Bahrain',
-    pl: 'Bahrajn'
+    pl: 'Bahrajnu'
   },
   Manama: {
     en: 'Manama',
@@ -141,7 +141,7 @@ export const countryTranslations = {
   },
   Bangladesh: {
     en: 'Bangladesh',
-    pl: 'Bangladesz'
+    pl: 'Bangladeszu'
   },
   Dhaka: {
     en: 'Dhaka',
@@ -149,7 +149,7 @@ export const countryTranslations = {
   },
   Barbados: {
     en: 'Barbados',
-    pl: 'Barbados'
+    pl: 'Barbadosu'
   },
   Bridgetown: {
     en: 'Bridgetown',
@@ -157,7 +157,7 @@ export const countryTranslations = {
   },
   Belarus: {
     en: 'Belarus',
-    pl: 'Białoruś'
+    pl: 'Białorusi'
   },
   Minsk: {
     en: 'Minsk',
@@ -165,7 +165,7 @@ export const countryTranslations = {
   },
   Belgium: {
     en: 'Belgium',
-    pl: 'Belgia'
+    pl: 'Belgii'
   },
   Brussels: {
     en: 'Brussels',
@@ -181,7 +181,7 @@ export const countryTranslations = {
   },
   Benin: {
     en: 'Benin',
-    pl: 'Benin'
+    pl: 'Beninu'
   },
   'Porto-Novo': {
     en: 'Porto-Novo',
@@ -197,7 +197,7 @@ export const countryTranslations = {
   },
   Bhutan: {
     en: 'Bhutan',
-    pl: 'Bhutan'
+    pl: 'Bhutanu'
   },
   Thimphu: {
     en: 'Thimphu',
@@ -205,7 +205,7 @@ export const countryTranslations = {
   },
   'Bolivia (Plurinational State of)': {
     en: 'Bolivia',
-    pl: 'Boliwia'
+    pl: 'Boliwii'
   },
   Sucre: {
     en: 'Sucre',
@@ -213,7 +213,7 @@ export const countryTranslations = {
   },
   'Bonaire, Sint Eustatius and Saba': {
     en: 'Bonaire, Sint Eustatius and Saba',
-    pl: 'Holandia Karaibska'
+    pl: 'Holandii Karaibskiej'
   },
   Kralendijk: {
     en: 'Kralendijk',
@@ -221,7 +221,7 @@ export const countryTranslations = {
   },
   'Bosnia and Herzegovina': {
     en: 'Bosnia and Herzegovina',
-    pl: 'Bośnia i Hercegowina'
+    pl: 'Bośni i Hercegowiny'
   },
   Sarajevo: {
     en: 'Sarajevo',
@@ -229,7 +229,7 @@ export const countryTranslations = {
   },
   Botswana: {
     en: 'Botswana',
-    pl: 'Botswana'
+    pl: 'Botswany'
   },
   Gaborone: {
     en: 'Gaborone',
@@ -237,11 +237,11 @@ export const countryTranslations = {
   },
   'Bouvet Island': {
     en: 'Bouvet Island',
-    pl: 'Wyspa Bouveta'
+    pl: 'Wyspy Bouveta'
   },
   Brazil: {
     en: 'Brazil',
-    pl: 'Brazylia'
+    pl: 'Brazylii'
   },
   Brasília: {
     en: 'Brasília',
@@ -249,7 +249,7 @@ export const countryTranslations = {
   },
   'British Indian Ocean Territory': {
     en: 'British Indian Ocean Territory',
-    pl: 'Brytyjskie Terytorium Oceanu Indyjskiego'
+    pl: 'Brytyjskiego Terytorium Oceanu Indyjskiego'
   },
   'Diego Garcia': {
     en: 'Diego Garcia',
@@ -257,11 +257,11 @@ export const countryTranslations = {
   },
   'United States Minor Outlying Islands': {
     en: 'United States Minor Outlying Islands',
-    pl: 'Dalekie Wyspy Mniejsze Stanów Zjednoczonych'
+    pl: 'Dalekich Wysp Mniejszych Stanów Zjednoczonych'
   },
   'Virgin Islands (British)': {
     en: 'Virgin Islands (British)',
-    pl: 'Brytyjskie Wyspy Dziewicze'
+    pl: 'Brytyjskich Wysp Dziewiczych'
   },
   'Road Town': {
     en: 'Road Town',
@@ -269,7 +269,7 @@ export const countryTranslations = {
   },
   'Virgin Islands (U.S.)': {
     en: 'Virgin Islands (U.S.)',
-    pl: 'Wyspy Dziewicze Stanów Zjednoczonych'
+    pl: 'Wysp Dziewiczych Stanów Zjednoczonych'
   },
   'Charlotte Amalie': {
     en: 'Charlotte Amalie',
@@ -285,7 +285,7 @@ export const countryTranslations = {
   },
   Bulgaria: {
     en: 'Bulgaria',
-    pl: 'Bułgaria'
+    pl: 'Bułgarii'
   },
   Sofia: {
     en: 'Sofia',
@@ -309,7 +309,7 @@ export const countryTranslations = {
   },
   Cambodia: {
     en: 'Cambodia',
-    pl: 'Kambodża'
+    pl: 'Kambodży'
   },
   'Phnom Penh': {
     en: 'Phnom Penh',
@@ -317,7 +317,7 @@ export const countryTranslations = {
   },
   Cameroon: {
     en: 'Cameroon',
-    pl: 'Kamerun'
+    pl: 'Kamerunu'
   },
   Yaoundé: {
     en: 'Yaoundé',
@@ -325,7 +325,7 @@ export const countryTranslations = {
   },
   Canada: {
     en: 'Canada',
-    pl: 'Kanada'
+    pl: 'Kanady'
   },
   Ottawa: {
     en: 'Ottawa',
@@ -333,7 +333,7 @@ export const countryTranslations = {
   },
   'Cabo Verde': {
     en: 'Cabo Verde',
-    pl: 'Republika Zielonego Przylądka'
+    pl: 'Republiki Zielonego Przylądka'
   },
   Praia: {
     en: 'Praia',
@@ -341,7 +341,7 @@ export const countryTranslations = {
   },
   'Cayman Islands': {
     en: 'Cayman Islands',
-    pl: 'Kajmany (wyspy)'
+    pl: 'Kajmanów (wyspy)'
   },
   'George Town': {
     en: 'George Town',
@@ -349,7 +349,7 @@ export const countryTranslations = {
   },
   'Central African Republic': {
     en: 'Central African Republic',
-    pl: 'Central African Republic'
+    pl: 'Republiki Środkowoafrykańskiej'
   },
   Bangui: {
     en: 'Bangui',
@@ -357,7 +357,7 @@ export const countryTranslations = {
   },
   Chad: {
     en: 'Chad',
-    pl: 'Czad'
+    pl: 'Czadu'
   },
   "N'Djamena": {
     en: "N'Djamena",
@@ -365,7 +365,7 @@ export const countryTranslations = {
   },
   Chile: {
     en: 'Chile',
-    pl: ''
+    pl: 'Czile'
   },
   Santiago: {
     en: 'Santiago',
@@ -373,7 +373,7 @@ export const countryTranslations = {
   },
   China: {
     en: 'China',
-    pl: 'Chiny'
+    pl: 'Chin'
   },
   Beijing: {
     en: 'Beijing',
@@ -381,7 +381,7 @@ export const countryTranslations = {
   },
   'Christmas Island': {
     en: 'Christmas Island',
-    pl: 'Wyspa Bożego Narodzenia'
+    pl: 'Wysp Bożego Narodzenia'
   },
   'Flying Fish Cove': {
     en: 'Flying Fish Cove',
@@ -389,7 +389,7 @@ export const countryTranslations = {
   },
   'Cocos (Keeling) Islands': {
     en: 'Cocos (Keeling) Islands',
-    pl: 'Wyspy Kokosowe'
+    pl: 'Wysp Kokosowych'
   },
   'West Island': {
     en: 'West Island',
@@ -397,7 +397,7 @@ export const countryTranslations = {
   },
   Colombia: {
     en: 'Colombia',
-    pl: 'Kolumbia'
+    pl: 'Kolumbii'
   },
   Bogotá: {
     en: 'Bogotá',
@@ -405,7 +405,7 @@ export const countryTranslations = {
   },
   Comoros: {
     en: 'Comoros',
-    pl: 'Komory'
+    pl: 'Komorów'
   },
   Moroni: {
     en: 'Moroni',
@@ -421,7 +421,7 @@ export const countryTranslations = {
   },
   'Congo (Democratic Republic of the)': {
     en: 'Democratic Republic of the Congo',
-    pl: 'Demokratyczna Republika Konga'
+    pl: 'Demokratycznej Republiki Konga'
   },
   Kinshasa: {
     en: 'Kinshasa',
@@ -429,7 +429,7 @@ export const countryTranslations = {
   },
   'Cook Islands': {
     en: 'Cook Islands',
-    pl: 'Wyspy Cooka'
+    pl: 'Wysp Cooka'
   },
   Avarua: {
     en: 'Avarua',
@@ -437,7 +437,7 @@ export const countryTranslations = {
   },
   'Costa Rica': {
     en: 'Costa Rica',
-    pl: 'Kostaryka'
+    pl: 'Kostaryki'
   },
   'San José': {
     en: 'San José',
@@ -445,7 +445,7 @@ export const countryTranslations = {
   },
   Croatia: {
     en: 'Croatia',
-    pl: 'Chorwacja'
+    pl: 'Chorwacji'
   },
   Zagreb: {
     en: 'Zagreb',
@@ -453,7 +453,7 @@ export const countryTranslations = {
   },
   Cuba: {
     en: 'Cuba',
-    pl: 'Kuba'
+    pl: 'Kuby'
   },
   Havana: {
     en: 'Havana',
@@ -469,7 +469,7 @@ export const countryTranslations = {
   },
   Cyprus: {
     en: 'Cyprus',
-    pl: 'Cypr'
+    pl: 'Cypru'
   },
   Nicosia: {
     en: 'Nicosia',
@@ -477,7 +477,7 @@ export const countryTranslations = {
   },
   'Czech Republic': {
     en: 'Czech Republic',
-    pl: 'Czechy'
+    pl: 'Czech'
   },
   Prague: {
     en: 'Prague',
@@ -485,7 +485,7 @@ export const countryTranslations = {
   },
   Denmark: {
     en: 'Denmark',
-    pl: 'Dania'
+    pl: 'Danii'
   },
   Copenhagen: {
     en: 'Copenhagen',
@@ -497,7 +497,7 @@ export const countryTranslations = {
   },
   Dominica: {
     en: 'Dominica',
-    pl: 'Dominika'
+    pl: 'Dominiki'
   },
   Roseau: {
     en: 'Roseau',
@@ -505,7 +505,7 @@ export const countryTranslations = {
   },
   'Dominican Republic': {
     en: 'Dominican Republic',
-    pl: 'Dominikana'
+    pl: 'Dominikany'
   },
   'Santo Domingo': {
     en: 'Santo Domingo',
@@ -513,7 +513,7 @@ export const countryTranslations = {
   },
   Ecuador: {
     en: 'Ecuador',
-    pl: 'Ekwador'
+    pl: 'Ekwadoru'
   },
   Quito: {
     en: 'Quito',
@@ -521,7 +521,7 @@ export const countryTranslations = {
   },
   Egypt: {
     en: 'Egypt',
-    pl: 'Egipt'
+    pl: 'Egiptu'
   },
   Cairo: {
     en: 'Cairo',
@@ -529,7 +529,7 @@ export const countryTranslations = {
   },
   'El Salvador': {
     en: 'El Salvador',
-    pl: 'Salwador'
+    pl: 'Salwadoru'
   },
   'San Salvador': {
     en: 'San Salvador',
@@ -537,7 +537,7 @@ export const countryTranslations = {
   },
   'Equatorial Guinea': {
     en: 'Equatorial Guinea',
-    pl: 'Gwinea Równikowa'
+    pl: 'Gwinei Równikowej'
   },
   Malabo: {
     en: 'Malabo',
@@ -545,7 +545,7 @@ export const countryTranslations = {
   },
   Eritrea: {
     en: 'Eritrea',
-    pl: 'Erytrea'
+    pl: 'Erytrei'
   },
   Asmara: {
     en: 'Asmara',
@@ -553,7 +553,7 @@ export const countryTranslations = {
   },
   Estonia: {
     en: 'Estonia',
-    pl: 'Estonia'
+    pl: 'Estonii'
   },
   Tallinn: {
     en: 'Tallinn',
@@ -561,7 +561,7 @@ export const countryTranslations = {
   },
   Ethiopia: {
     en: 'Ethiopia',
-    pl: 'Etiopia'
+    pl: 'Etiopii'
   },
   'Addis Ababa': {
     en: 'Addis Ababa',
@@ -569,7 +569,7 @@ export const countryTranslations = {
   },
   'Falkland Islands (Malvinas)': {
     en: 'Falkland Islands (Malvinas)',
-    pl: 'Falklandy (Malwiny)'
+    pl: 'Falklandów (Malwin)'
   },
   Stanley: {
     en: 'Stanley',
@@ -577,7 +577,7 @@ export const countryTranslations = {
   },
   'Faroe Islands': {
     en: 'Faroe Islands',
-    pl: 'Wyspy Owcze'
+    pl: 'Wysp Owczych'
   },
   Tórshavn: {
     en: 'Tórshavn',
@@ -585,7 +585,7 @@ export const countryTranslations = {
   },
   Fiji: {
     en: 'Fiji',
-    pl: 'Fidżi'
+    pl: 'Fidżii'
   },
   Suva: {
     en: 'Suva',
@@ -593,7 +593,7 @@ export const countryTranslations = {
   },
   Finland: {
     en: 'Finland',
-    pl: 'Finlandia'
+    pl: 'Finlandii'
   },
   Helsinki: {
     en: 'Helsinki',
@@ -601,7 +601,7 @@ export const countryTranslations = {
   },
   France: {
     en: 'France',
-    pl: 'Francja'
+    pl: 'Francji'
   },
   Paris: {
     en: 'Paris',
@@ -609,7 +609,7 @@ export const countryTranslations = {
   },
   'French Guiana': {
     en: 'French Guiana',
-    pl: 'Gujana Francuska'
+    pl: 'Gujany Francuskiej'
   },
   Cayenne: {
     en: 'Cayenne',
@@ -617,7 +617,7 @@ export const countryTranslations = {
   },
   'French Polynesia': {
     en: 'French Polynesia',
-    pl: 'Polinezja Francuska'
+    pl: 'Polinezji Francuskiej'
   },
   Papeetē: {
     en: 'Papeetē',
@@ -625,7 +625,7 @@ export const countryTranslations = {
   },
   'French Southern Territories': {
     en: 'French Southern Territories',
-    pl: 'Francuskie Terytoria Południowe i Antarktyczne'
+    pl: 'Francuskiego Terytorium Południowego i Antarktycznego'
   },
   'Port-aux-Français': {
     en: 'Port-aux-Français',
@@ -633,7 +633,7 @@ export const countryTranslations = {
   },
   Gabon: {
     en: 'Gabon',
-    pl: 'Gabon'
+    pl: 'Gabonu'
   },
   Libreville: {
     en: 'Libreville',
@@ -641,7 +641,7 @@ export const countryTranslations = {
   },
   Gambia: {
     en: 'Gambia',
-    pl: 'Gambia'
+    pl: 'Gambii'
   },
   Banjul: {
     en: 'Banjul',
@@ -649,7 +649,7 @@ export const countryTranslations = {
   },
   Georgia: {
     en: 'Georgia',
-    pl: 'Gruzja'
+    pl: 'Gruzji'
   },
   Tbilisi: {
     en: 'Tbilisi',
@@ -657,7 +657,7 @@ export const countryTranslations = {
   },
   Germany: {
     en: 'Germany',
-    pl: 'Niemcy'
+    pl: 'Niemiec'
   },
   Berlin: {
     en: 'Berlin',
@@ -665,7 +665,7 @@ export const countryTranslations = {
   },
   Ghana: {
     en: 'Ghana',
-    pl: 'Ghana'
+    pl: 'Ghany'
   },
   Accra: {
     en: 'Accra',
@@ -673,11 +673,11 @@ export const countryTranslations = {
   },
   Gibraltar: {
     en: 'Gibraltar',
-    pl: 'Gibraltar'
+    pl: 'Gibraltaru'
   },
   Greece: {
     en: 'Greece',
-    pl: 'Grecja'
+    pl: 'Grecji'
   },
   Athens: {
     en: 'Athens',
@@ -685,7 +685,7 @@ export const countryTranslations = {
   },
   Greenland: {
     en: 'Greenland',
-    pl: 'Grenlandia'
+    pl: 'Grenlandii'
   },
   Nuuk: {
     en: 'Nuuk',
@@ -693,7 +693,7 @@ export const countryTranslations = {
   },
   Grenada: {
     en: 'Grenada',
-    pl: 'Grenada'
+    pl: 'Grenady'
   },
   "St. George's": {
     en: "St. George's",
@@ -701,7 +701,7 @@ export const countryTranslations = {
   },
   Guadeloupe: {
     en: 'Guadeloupe',
-    pl: 'Gwadelupa'
+    pl: 'Gwadelupy'
   },
   'Basse-Terre': {
     en: 'Basse-Terre',
@@ -709,7 +709,7 @@ export const countryTranslations = {
   },
   Guam: {
     en: 'Guam',
-    pl: 'Guam'
+    pl: 'Guamu'
   },
   Hagåtña: {
     en: 'Hagåtña',
@@ -717,7 +717,7 @@ export const countryTranslations = {
   },
   Guatemala: {
     en: 'Guatemala',
-    pl: 'Gwatemala'
+    pl: 'Gwatemali'
   },
   'Guatemala City': {
     en: 'Guatemala City',
@@ -733,7 +733,7 @@ export const countryTranslations = {
   },
   Guinea: {
     en: 'Guinea',
-    pl: 'Gwinea'
+    pl: 'Gwinei'
   },
   Conakry: {
     en: 'Conakry',
@@ -741,7 +741,7 @@ export const countryTranslations = {
   },
   'Guinea-Bissau': {
     en: 'Guinea-Bissau',
-    pl: 'Gwinea Bissau'
+    pl: 'Gwinei Bissau'
   },
   Bissau: {
     en: 'Bissau',
@@ -749,7 +749,7 @@ export const countryTranslations = {
   },
   Guyana: {
     en: 'Guyana',
-    pl: 'Gujana'
+    pl: 'Gujany'
   },
   Georgetown: {
     en: 'Georgetown',
@@ -765,11 +765,11 @@ export const countryTranslations = {
   },
   'Heard Island and McDonald Islands': {
     en: 'Heard Island and McDonald Islands',
-    pl: 'Wyspy Heard i McDonald'
+    pl: 'Wysp Heard i McDonald'
   },
   'Holy See': {
     en: 'Holy See',
-    pl: 'Stolica Apostolska'
+    pl: 'Stolicy Apostolskiej'
   },
   Rome: {
     en: 'Rome',
@@ -777,7 +777,7 @@ export const countryTranslations = {
   },
   Honduras: {
     en: 'Honduras',
-    pl: 'Honduras'
+    pl: 'Hondurasu'
   },
   Tegucigalpa: {
     en: 'Tegucigalpa',
@@ -785,7 +785,7 @@ export const countryTranslations = {
   },
   'Hong Kong': {
     en: 'Hong Kong',
-    pl: 'Hongkong'
+    pl: 'Hongkongu'
   },
   'City of Victoria': {
     en: 'City of Victoria',
@@ -793,7 +793,7 @@ export const countryTranslations = {
   },
   Hungary: {
     en: 'Hungary',
-    pl: 'Węgry'
+    pl: 'Węgier'
   },
   Budapest: {
     en: 'Budapest',
@@ -801,7 +801,7 @@ export const countryTranslations = {
   },
   Iceland: {
     en: 'Iceland',
-    pl: 'Islandia'
+    pl: 'Islandii'
   },
   Reykjavík: {
     en: 'Reykjavík',
@@ -809,7 +809,7 @@ export const countryTranslations = {
   },
   India: {
     en: 'India',
-    pl: 'Indie'
+    pl: 'Indii'
   },
   'New Delhi': {
     en: 'New Delhi',
@@ -817,7 +817,7 @@ export const countryTranslations = {
   },
   Indonesia: {
     en: 'Indonesia',
-    pl: 'Indonezja'
+    pl: 'Indonezji'
   },
   Jakarta: {
     en: 'Jakarta',
@@ -825,7 +825,7 @@ export const countryTranslations = {
   },
   "Côte d'Ivoire": {
     en: "Côte d'Ivoire",
-    pl: 'Wybrzeże Kości Słoniowej'
+    pl: 'Wybrzeża Kości Słoniowej'
   },
   Yamoussoukro: {
     en: 'Yamoussoukro',
@@ -833,7 +833,7 @@ export const countryTranslations = {
   },
   'Iran (Islamic Republic of)': {
     en: 'Iran',
-    pl: 'Iran'
+    pl: 'Iranu'
   },
   Tehran: {
     en: 'Tehran',
@@ -841,7 +841,7 @@ export const countryTranslations = {
   },
   Iraq: {
     en: 'Iraq',
-    pl: 'Irak'
+    pl: 'Iraku'
   },
   Baghdad: {
     en: 'Baghdad',
@@ -849,7 +849,7 @@ export const countryTranslations = {
   },
   Ireland: {
     en: 'Ireland',
-    pl: 'Irlandia'
+    pl: 'Irlandii'
   },
   Dublin: {
     en: 'Dublin',
@@ -857,7 +857,7 @@ export const countryTranslations = {
   },
   'Isle of Man': {
     en: 'Isle of Man',
-    pl: 'Wyspa Man'
+    pl: 'Wyspy Man'
   },
   Douglas: {
     en: 'Douglas',
@@ -865,7 +865,7 @@ export const countryTranslations = {
   },
   Israel: {
     en: 'Israel',
-    pl: 'Izrael'
+    pl: 'Izraela'
   },
   Jerusalem: {
     en: 'Jerusalem',
@@ -873,11 +873,11 @@ export const countryTranslations = {
   },
   Italy: {
     en: 'Italy',
-    pl: 'Włochy'
+    pl: 'Włoch'
   },
   Jamaica: {
     en: 'Jamaica',
-    pl: 'Jamajka'
+    pl: 'Jamajki'
   },
   Kingston: {
     en: 'Kingston',
@@ -885,7 +885,7 @@ export const countryTranslations = {
   },
   Japan: {
     en: 'Japan',
-    pl: 'Japonia'
+    pl: 'Japonii'
   },
   Tokyo: {
     en: 'Tokyo',
@@ -901,7 +901,7 @@ export const countryTranslations = {
   },
   Jordan: {
     en: 'Jordan',
-    pl: 'Jordania'
+    pl: 'Jordanii'
   },
   Amman: {
     en: 'Amman',
@@ -909,7 +909,7 @@ export const countryTranslations = {
   },
   Kazakhstan: {
     en: 'Kazakhstan',
-    pl: 'Kazachstan'
+    pl: 'Kazachstanu'
   },
   Astana: {
     en: 'Nur-Sultan',
@@ -917,7 +917,7 @@ export const countryTranslations = {
   },
   Kenya: {
     en: 'Kenya',
-    pl: 'Kenia'
+    pl: 'Kenii'
   },
   Nairobi: {
     en: 'Nairobi',
@@ -933,7 +933,7 @@ export const countryTranslations = {
   },
   Kuwait: {
     en: 'Kuwait',
-    pl: 'Kuwejt'
+    pl: 'Kuwejtu'
   },
   'Kuwait City': {
     en: 'Kuwait City',
@@ -941,7 +941,7 @@ export const countryTranslations = {
   },
   Kyrgyzstan: {
     en: 'Kyrgyzstan',
-    pl: 'Kirgistan'
+    pl: 'Kirgistanu'
   },
   Bishkek: {
     en: 'Bishkek',
@@ -949,7 +949,7 @@ export const countryTranslations = {
   },
   "Lao People's Democratic Republic": {
     en: 'Laos',
-    pl: 'Laos'
+    pl: 'Laosu'
   },
   Vientiane: {
     en: 'Vientiane',
@@ -957,7 +957,7 @@ export const countryTranslations = {
   },
   Latvia: {
     en: 'Latvia',
-    pl: 'Łotwa'
+    pl: 'Łotwy'
   },
   Riga: {
     en: 'Riga',
@@ -965,7 +965,7 @@ export const countryTranslations = {
   },
   Lebanon: {
     en: 'Lebanon',
-    pl: 'Liban'
+    pl: 'Libanu'
   },
   Beirut: {
     en: 'Beirut',
@@ -981,7 +981,7 @@ export const countryTranslations = {
   },
   Liberia: {
     en: 'Liberia',
-    pl: 'Liberia'
+    pl: 'Liberii'
   },
   Monrovia: {
     en: 'Monrovia',
@@ -989,7 +989,7 @@ export const countryTranslations = {
   },
   Libya: {
     en: 'Libya',
-    pl: 'Libia'
+    pl: 'Libii'
   },
   Tripoli: {
     en: 'Tripoli',
@@ -997,7 +997,7 @@ export const countryTranslations = {
   },
   Liechtenstein: {
     en: 'Liechtenstein',
-    pl: 'Liechtenstein'
+    pl: 'Liechtensteinu'
   },
   Vaduz: {
     en: 'Vaduz',
@@ -1005,7 +1005,7 @@ export const countryTranslations = {
   },
   Lithuania: {
     en: 'Lithuania',
-    pl: 'Litwa'
+    pl: 'Litwy'
   },
   Vilnius: {
     en: 'Vilnius',
@@ -1013,7 +1013,7 @@ export const countryTranslations = {
   },
   Luxembourg: {
     en: 'Luxembourg',
-    pl: 'Luksemburg'
+    pl: 'Luksemburgu'
   },
   Macao: {
     en: 'Macao',
@@ -1021,7 +1021,7 @@ export const countryTranslations = {
   },
   'Macedonia (the former Yugoslav Republic of)': {
     en: 'North Macedonia',
-    pl: 'Macedonia Północna'
+    pl: 'Macedonii Północnej'
   },
   Skopje: {
     en: 'Skopje',
@@ -1029,7 +1029,7 @@ export const countryTranslations = {
   },
   Madagascar: {
     en: 'Madagascar',
-    pl: 'Madagaskar'
+    pl: 'Madagaskaru'
   },
   Antananarivo: {
     en: 'Antananarivo',
@@ -1045,7 +1045,7 @@ export const countryTranslations = {
   },
   Malaysia: {
     en: 'Malaysia',
-    pl: 'Malezja'
+    pl: 'Malezji'
   },
   'Kuala Lumpur': {
     en: 'Kuala Lumpur',
@@ -1053,7 +1053,7 @@ export const countryTranslations = {
   },
   Maldives: {
     en: 'Maldives',
-    pl: 'Malediwy'
+    pl: 'Malediwów'
   },
   Malé: {
     en: 'Malé',
@@ -1069,7 +1069,7 @@ export const countryTranslations = {
   },
   Malta: {
     en: 'Malta',
-    pl: 'Malta'
+    pl: 'Malty'
   },
   Valletta: {
     en: 'Valletta',
@@ -1077,7 +1077,7 @@ export const countryTranslations = {
   },
   'Marshall Islands': {
     en: 'Marshall Islands',
-    pl: 'Wyspy Marshalla'
+    pl: 'Wysp Marshalla'
   },
   Majuro: {
     en: 'Majuro',
@@ -1085,7 +1085,7 @@ export const countryTranslations = {
   },
   Martinique: {
     en: 'Martinique',
-    pl: 'Martynika'
+    pl: 'Martyniki'
   },
   'Fort-de-France': {
     en: 'Fort-de-France',
@@ -1093,7 +1093,7 @@ export const countryTranslations = {
   },
   Mauritania: {
     en: 'Mauritania',
-    pl: 'Mauretania'
+    pl: 'Mauretanii'
   },
   Nouakchott: {
     en: 'Nouakchott',
@@ -1101,7 +1101,7 @@ export const countryTranslations = {
   },
   Mauritius: {
     en: 'Mauritius',
-    pl: 'Mauritius'
+    pl: 'Mauritiusu'
   },
   'Port Louis': {
     en: 'Port Louis',
@@ -1109,7 +1109,7 @@ export const countryTranslations = {
   },
   Mayotte: {
     en: 'Mayotte',
-    pl: 'Majotta'
+    pl: 'Majotty'
   },
   Mamoudzou: {
     en: 'Mamoudzou',
@@ -1117,7 +1117,7 @@ export const countryTranslations = {
   },
   Mexico: {
     en: 'Mexico',
-    pl: 'Meksyk'
+    pl: 'Meksyku'
   },
   'Mexico City': {
     en: 'Mexico City',
@@ -1125,7 +1125,7 @@ export const countryTranslations = {
   },
   'Micronesia (Federated States of)': {
     en: 'Micronesia',
-    pl: 'Mikronezja'
+    pl: 'Mikronezji'
   },
   Palikir: {
     en: 'Palikir',
@@ -1133,7 +1133,7 @@ export const countryTranslations = {
   },
   'Moldova (Republic of)': {
     en: 'Moldova',
-    pl: 'Mołdawia'
+    pl: 'Mołdawii'
   },
   Chișinău: {
     en: 'Chișinău',
@@ -1141,11 +1141,11 @@ export const countryTranslations = {
   },
   Monaco: {
     en: 'Monaco',
-    pl: 'Monaco'
+    pl: 'Monako'
   },
   Mongolia: {
     en: 'Mongolia',
-    pl: 'Mongolia'
+    pl: 'Mongolii'
   },
   'Ulan Bator': {
     en: 'Ulan Bator',
@@ -1153,7 +1153,7 @@ export const countryTranslations = {
   },
   Montenegro: {
     en: 'Montenegro',
-    pl: 'Czarnogóra'
+    pl: 'Czarnogóry'
   },
   Podgorica: {
     en: 'Podgorica',
@@ -1161,7 +1161,7 @@ export const countryTranslations = {
   },
   Montserrat: {
     en: 'Montserrat',
-    pl: 'Montserrat'
+    pl: 'Montserratu'
   },
   Plymouth: {
     en: 'Plymouth',
@@ -1177,7 +1177,7 @@ export const countryTranslations = {
   },
   Mozambique: {
     en: 'Mozambique',
-    pl: 'Mozambik'
+    pl: 'Mozambiku'
   },
   Maputo: {
     en: 'Maputo',
@@ -1185,7 +1185,7 @@ export const countryTranslations = {
   },
   Myanmar: {
     en: 'Myanmar',
-    pl: 'Mjanma'
+    pl: 'Mjanmy'
   },
   Naypyidaw: {
     en: 'Naypyidaw',
@@ -1193,7 +1193,7 @@ export const countryTranslations = {
   },
   Namibia: {
     en: 'Namibia',
-    pl: 'Namibia'
+    pl: 'Namibii'
   },
   Windhoek: {
     en: 'Windhoek',
@@ -1209,7 +1209,7 @@ export const countryTranslations = {
   },
   Nepal: {
     en: 'Nepal',
-    pl: 'Nepal'
+    pl: 'Nepalu'
   },
   Kathmandu: {
     en: 'Kathmandu',
@@ -1217,7 +1217,7 @@ export const countryTranslations = {
   },
   Netherlands: {
     en: 'Netherlands',
-    pl: 'Niderlandy'
+    pl: 'Niderlandów'
   },
   Amsterdam: {
     en: 'Amsterdam',
@@ -1225,7 +1225,7 @@ export const countryTranslations = {
   },
   'New Caledonia': {
     en: 'New Caledonia',
-    pl: 'Nowa Kaledonia'
+    pl: 'Nowej Kaledonii'
   },
   Nouméa: {
     en: 'Nouméa',
@@ -1233,7 +1233,7 @@ export const countryTranslations = {
   },
   'New Zealand': {
     en: 'New Zealand',
-    pl: 'Nowa Zelandia'
+    pl: 'Nowej Zelandii'
   },
   Wellington: {
     en: 'Wellington',
@@ -1241,7 +1241,7 @@ export const countryTranslations = {
   },
   Nicaragua: {
     en: 'Nicaragua',
-    pl: 'Nikaragua'
+    pl: 'Nikaragui'
   },
   Managua: {
     en: 'Managua',
@@ -1249,7 +1249,7 @@ export const countryTranslations = {
   },
   Niger: {
     en: 'Niger',
-    pl: 'Niger'
+    pl: 'Nigru'
   },
   Niamey: {
     en: 'Niamey',
@@ -1257,7 +1257,7 @@ export const countryTranslations = {
   },
   Nigeria: {
     en: 'Nigeria',
-    pl: 'Nigeria'
+    pl: 'Nigerii'
   },
   Abuja: {
     en: 'Abuja',
@@ -1273,11 +1273,11 @@ export const countryTranslations = {
   },
   'Norfolk Island': {
     en: 'Norfolk Island',
-    pl: 'Norfolk'
+    pl: 'Norfolku'
   },
   "Korea (Democratic People's Republic of)": {
     en: 'North Korea',
-    pl: 'Korea Północna'
+    pl: 'Koreia Północnej'
   },
   Pyongyang: {
     en: 'Pyongyang',
@@ -1285,7 +1285,7 @@ export const countryTranslations = {
   },
   'Northern Mariana Islands': {
     en: 'Northern Mariana Islands',
-    pl: 'Mariany Północne'
+    pl: 'Marianów Północnych'
   },
   Saipan: {
     en: 'Saipan',
@@ -1293,7 +1293,7 @@ export const countryTranslations = {
   },
   Norway: {
     en: 'Norway',
-    pl: 'Norwegia'
+    pl: 'Norwegii'
   },
   Oslo: {
     en: 'Oslo',
@@ -1301,7 +1301,7 @@ export const countryTranslations = {
   },
   Oman: {
     en: 'Oman',
-    pl: 'Oman'
+    pl: 'Omanu'
   },
   Muscat: {
     en: 'Muscat',
@@ -1309,7 +1309,7 @@ export const countryTranslations = {
   },
   Pakistan: {
     en: 'Pakistan',
-    pl: 'Pakistan'
+    pl: 'Pakistanu'
   },
   Islamabad: {
     en: 'Islamabad',
@@ -1325,7 +1325,7 @@ export const countryTranslations = {
   },
   'Palestine, State of': {
     en: 'State of Palestine',
-    pl: 'Autonomia Palestyńska'
+    pl: 'Autonomii Palestyńskiej'
   },
   Ramallah: {
     en: 'Ramallah',
@@ -1333,7 +1333,7 @@ export const countryTranslations = {
   },
   Panama: {
     en: 'Panama',
-    pl: 'Panama'
+    pl: 'Panamy'
   },
   'Panama City': {
     en: 'Panama City',
@@ -1341,7 +1341,7 @@ export const countryTranslations = {
   },
   'Papua New Guinea': {
     en: 'Papua New Guinea',
-    pl: 'Papua-Nowa Gwinea'
+    pl: 'Papui-Nowej Gwinei'
   },
   'Port Moresby': {
     en: 'Port Moresby',
@@ -1349,7 +1349,7 @@ export const countryTranslations = {
   },
   Paraguay: {
     en: 'Paraguay',
-    pl: 'Paragwaj'
+    pl: 'Paragwaju'
   },
   Asunción: {
     en: 'Asunción',
@@ -1365,7 +1365,7 @@ export const countryTranslations = {
   },
   Philippines: {
     en: 'Philippines',
-    pl: 'Filipiny'
+    pl: 'Filipin'
   },
   Manila: {
     en: 'Manila',
@@ -1381,7 +1381,7 @@ export const countryTranslations = {
   },
   Poland: {
     en: 'Poland',
-    pl: 'Polska'
+    pl: 'Polski'
   },
   Warsaw: {
     en: 'Warsaw',
@@ -1389,7 +1389,7 @@ export const countryTranslations = {
   },
   Portugal: {
     en: 'Portugal',
-    pl: 'Portugalia'
+    pl: 'Portugalii'
   },
   Lisbon: {
     en: 'Lisbon',
@@ -1405,7 +1405,7 @@ export const countryTranslations = {
   },
   Qatar: {
     en: 'Qatar',
-    pl: 'Katar'
+    pl: 'Kataru'
   },
   Doha: {
     en: 'Doha',
@@ -1421,7 +1421,7 @@ export const countryTranslations = {
   },
   Réunion: {
     en: 'Réunion',
-    pl: 'Reunion'
+    pl: 'Reunionu'
   },
   'Saint-Denis': {
     en: 'Saint-Denis',
@@ -1429,7 +1429,7 @@ export const countryTranslations = {
   },
   Romania: {
     en: 'Romania',
-    pl: 'Rumunia'
+    pl: 'Rumunii'
   },
   Bucharest: {
     en: 'Bucharest',
@@ -1437,7 +1437,7 @@ export const countryTranslations = {
   },
   'Russian Federation': {
     en: 'Russia',
-    pl: 'Rosja'
+    pl: 'Rosji'
   },
   Moscow: {
     en: 'Moscow',
@@ -1445,7 +1445,7 @@ export const countryTranslations = {
   },
   Rwanda: {
     en: 'Rwanda',
-    pl: 'Rwanda'
+    pl: 'Rwandy'
   },
   Kigali: {
     en: 'Kigali',
@@ -1453,7 +1453,7 @@ export const countryTranslations = {
   },
   'Saint Barthélemy': {
     en: 'Saint Barthélemy',
-    pl: 'Wspólnota Saint-Barthélemy'
+    pl: 'Wspólnoty Saint-Barthélemy'
   },
   Gustavia: {
     en: 'Gustavia',
@@ -1461,7 +1461,7 @@ export const countryTranslations = {
   },
   'Saint Helena, Ascension and Tristan da Cunha': {
     en: 'Saint Helena',
-    pl: 'Święta Helena'
+    pl: 'Świętej Heleny'
   },
   Jamestown: {
     en: 'Jamestown',
@@ -1485,7 +1485,7 @@ export const countryTranslations = {
   },
   'Saint Martin (French part)': {
     en: 'Saint Martin (French part)',
-    pl: 'Saint Martin (French part)'
+    pl: 'Sint Maarten (Francuskiej części)'
   },
   Marigot: {
     en: 'Marigot',
@@ -1493,7 +1493,7 @@ export const countryTranslations = {
   },
   'Saint Pierre and Miquelon': {
     en: 'Saint Pierre and Miquelon',
-    pl: 'Wspólnota Terytorialna Saint Pierre i Miquelon'
+    pl: 'Wspólnoty Terytorialnej Saint Pierre i Miquelon'
   },
   'Saint-Pierre': {
     en: 'Saint-Pierre',
@@ -1509,7 +1509,7 @@ export const countryTranslations = {
   },
   Samoa: {
     en: 'Samoa',
-    pl: 'Samoa'
+    pl: 'Samoy'
   },
   Apia: {
     en: 'Apia',
@@ -1525,7 +1525,7 @@ export const countryTranslations = {
   },
   'Sao Tome and Principe': {
     en: 'Sao Tome and Principe',
-    pl: 'Wyspy Świętego Tomasza i Książęca'
+    pl: 'Wysp Świętego Tomasza i Książęca'
   },
   'São Tomé': {
     en: 'São Tomé',
@@ -1533,7 +1533,7 @@ export const countryTranslations = {
   },
   'Saudi Arabia': {
     en: 'Saudi Arabia',
-    pl: 'Arabia Saudyjska'
+    pl: 'Arabii Saudyjskiej'
   },
   Riyadh: {
     en: 'Riyadh',
@@ -1541,7 +1541,7 @@ export const countryTranslations = {
   },
   Senegal: {
     en: 'Senegal',
-    pl: 'Senegal'
+    pl: 'Senegalu'
   },
   Dakar: {
     en: 'Dakar',
@@ -1549,7 +1549,7 @@ export const countryTranslations = {
   },
   Serbia: {
     en: 'Serbia',
-    pl: 'Serbia'
+    pl: 'Serbii'
   },
   Belgrade: {
     en: 'Belgrade',
@@ -1557,7 +1557,7 @@ export const countryTranslations = {
   },
   Seychelles: {
     en: 'Seychelles',
-    pl: 'Seszele'
+    pl: 'Seszeli'
   },
   Victoria: {
     en: 'Victoria',
@@ -1573,7 +1573,7 @@ export const countryTranslations = {
   },
   Singapore: {
     en: 'Singapore',
-    pl: 'Singapore'
+    pl: 'Singapuru'
   },
   'Sint Maarten (Dutch part)': {
     en: 'Sint Maarten',
@@ -1585,7 +1585,7 @@ export const countryTranslations = {
   },
   Slovakia: {
     en: 'Slovakia',
-    pl: 'Słowacja'
+    pl: 'Słowacji'
   },
   Bratislava: {
     en: 'Bratislava',
@@ -1593,7 +1593,7 @@ export const countryTranslations = {
   },
   Slovenia: {
     en: 'Slovenia',
-    pl: 'Słowenia'
+    pl: 'Słowenii'
   },
   Ljubljana: {
     en: 'Ljubljana',
@@ -1601,7 +1601,7 @@ export const countryTranslations = {
   },
   'Solomon Islands': {
     en: 'Solomon Islands',
-    pl: 'Wyspy Salomona'
+    pl: 'Wysp Salomona'
   },
   Honiara: {
     en: 'Honiara',
@@ -1609,7 +1609,7 @@ export const countryTranslations = {
   },
   Somalia: {
     en: 'Somalia',
-    pl: 'Somalia'
+    pl: 'Somalii'
   },
   Mogadishu: {
     en: 'Mogadishu',
@@ -1617,7 +1617,7 @@ export const countryTranslations = {
   },
   'South Africa': {
     en: 'South Africa',
-    pl: 'Republika Południowej Afryki'
+    pl: 'Republiki Południowej Afryki'
   },
   Pretoria: {
     en: 'Pretoria',
@@ -1625,7 +1625,7 @@ export const countryTranslations = {
   },
   'South Georgia and the South Sandwich Islands': {
     en: 'South Georgia and the South Sandwich Islands',
-    pl: 'Georgia Południowa i Sandwich Południowy'
+    pl: 'Georgii Południowej i Sandwich Południowego'
   },
   'King Edward Point': {
     en: 'King Edward Point',
@@ -1633,7 +1633,7 @@ export const countryTranslations = {
   },
   'Korea (Republic of)': {
     en: 'South Korea',
-    pl: 'Korea Południowa'
+    pl: 'Korei Południowej'
   },
   Seoul: {
     en: 'Seoul',
@@ -1641,7 +1641,7 @@ export const countryTranslations = {
   },
   'South Sudan': {
     en: 'South Sudan',
-    pl: 'Sudan Południowy'
+    pl: 'Sudanu Południowego'
   },
   Juba: {
     en: 'Juba',
@@ -1649,7 +1649,7 @@ export const countryTranslations = {
   },
   Spain: {
     en: 'Spain',
-    pl: 'Hiszpania'
+    pl: 'Hiszpanii'
   },
   Madrid: {
     en: 'Madrid',
@@ -1657,7 +1657,7 @@ export const countryTranslations = {
   },
   'Sri Lanka': {
     en: 'Sri Lanka',
-    pl: 'Sri Lanka'
+    pl: 'Sri Lanki'
   },
   Colombo: {
     en: 'Sri Jayawardenepura Kotte',
@@ -1665,7 +1665,7 @@ export const countryTranslations = {
   },
   Sudan: {
     en: 'Sudan',
-    pl: 'Sudan'
+    pl: 'Sudanu'
   },
   Khartoum: {
     en: 'Khartoum',
@@ -1673,7 +1673,7 @@ export const countryTranslations = {
   },
   Suriname: {
     en: 'Suriname',
-    pl: 'Surinam'
+    pl: 'Surinamu'
   },
   Paramaribo: {
     en: 'Paramaribo',
@@ -1681,7 +1681,7 @@ export const countryTranslations = {
   },
   'Svalbard and Jan Mayen': {
     en: 'Svalbard and Jan Mayen',
-    pl: 'Svalbard'
+    pl: 'Svalbardu'
   },
   Longyearbyen: {
     en: 'Longyearbyen',
@@ -1697,7 +1697,7 @@ export const countryTranslations = {
   },
   Sweden: {
     en: 'Sweden',
-    pl: 'Szwecja'
+    pl: 'Szwecji'
   },
   Stockholm: {
     en: 'Stockholm',
@@ -1705,7 +1705,7 @@ export const countryTranslations = {
   },
   Switzerland: {
     en: 'Switzerland',
-    pl: 'Szwajcaria'
+    pl: 'Szwajcarii'
   },
   Bern: {
     en: 'Bern',
@@ -1713,7 +1713,7 @@ export const countryTranslations = {
   },
   'Syrian Arab Republic': {
     en: 'Syria',
-    pl: 'Syria'
+    pl: 'Syrii'
   },
   Damascus: {
     en: 'Damascus',
@@ -1721,7 +1721,7 @@ export const countryTranslations = {
   },
   Taiwan: {
     en: 'Taiwan',
-    pl: 'Taiwan'
+    pl: 'Taiwanu'
   },
   Taipei: {
     en: 'Taipei',
@@ -1729,7 +1729,7 @@ export const countryTranslations = {
   },
   Tajikistan: {
     en: 'Tajikistan',
-    pl: 'Tadżykistan'
+    pl: 'Tadżykistanu'
   },
   Dushanbe: {
     en: 'Dushanbe',
@@ -1737,7 +1737,7 @@ export const countryTranslations = {
   },
   'Tanzania, United Republic of': {
     en: 'Tanzania',
-    pl: 'Tanzania'
+    pl: 'Tanzanii'
   },
   Dodoma: {
     en: 'Dodoma',
@@ -1745,7 +1745,7 @@ export const countryTranslations = {
   },
   Thailand: {
     en: 'Thailand',
-    pl: 'Tajlandia'
+    pl: 'Tajlandii'
   },
   Bangkok: {
     en: 'Bangkok',
@@ -1753,7 +1753,7 @@ export const countryTranslations = {
   },
   'Timor-Leste': {
     en: 'Timor-Leste',
-    pl: 'Timor Wschodni'
+    pl: 'Timoru Wschodniego'
   },
   Dili: {
     en: 'Dili',
@@ -1777,7 +1777,7 @@ export const countryTranslations = {
   },
   Tonga: {
     en: 'Tonga',
-    pl: 'Tonga'
+    pl: 'Tongi'
   },
   "Nuku'alofa": {
     en: "Nuku'alofa",
@@ -1785,7 +1785,7 @@ export const countryTranslations = {
   },
   'Trinidad and Tobago': {
     en: 'Trinidad and Tobago',
-    pl: 'Trynidad i Tobago'
+    pl: 'Trynidadu i Tobago'
   },
   'Port of Spain': {
     en: 'Port of Spain',
@@ -1793,7 +1793,7 @@ export const countryTranslations = {
   },
   Tunisia: {
     en: 'Tunisia',
-    pl: 'Tunezja'
+    pl: 'Tunezji'
   },
   Tunis: {
     en: 'Tunis',
@@ -1801,7 +1801,7 @@ export const countryTranslations = {
   },
   Turkey: {
     en: 'Turkey',
-    pl: 'Turcja'
+    pl: 'Turcji'
   },
   Ankara: {
     en: 'Ankara',
@@ -1809,7 +1809,7 @@ export const countryTranslations = {
   },
   Turkmenistan: {
     en: 'Turkmenistan',
-    pl: 'Turkmenistan'
+    pl: 'Turkmenistanu'
   },
   Ashgabat: {
     en: 'Ashgabat',
@@ -1833,7 +1833,7 @@ export const countryTranslations = {
   },
   Uganda: {
     en: 'Uganda',
-    pl: 'Uganda'
+    pl: 'Ugandy'
   },
   Kampala: {
     en: 'Kampala',
@@ -1841,7 +1841,7 @@ export const countryTranslations = {
   },
   Ukraine: {
     en: 'Ukraine',
-    pl: 'Ukraina'
+    pl: 'Ukrainy'
   },
   Kiev: {
     en: 'Kiev',
@@ -1849,7 +1849,7 @@ export const countryTranslations = {
   },
   'United Arab Emirates': {
     en: 'United Arab Emirates',
-    pl: 'Zjednoczone Emiraty Arabskie'
+    pl: 'Zjednoczonych Emiratów Arabskich'
   },
   'Abu Dhabi': {
     en: 'Abu Dhabi',
@@ -1857,15 +1857,15 @@ export const countryTranslations = {
   },
   'United Kingdom of Great Britain and Northern Ireland': {
     en: 'United Kingdom',
-    pl: 'United Kingdom'
+    pl: 'Wielkiej Brytani'
   },
   London: {
     en: 'London',
-    pl: 'Lodnyn'
+    pl: 'Londyn'
   },
   'United States of America': {
     en: 'United States of America',
-    pl: 'Stany Zjednoczone'
+    pl: 'Stanów Zjednoczonych'
   },
   'Washington, D.C.': {
     en: 'Washington, D.C.',
@@ -1873,7 +1873,7 @@ export const countryTranslations = {
   },
   Uruguay: {
     en: 'Uruguay',
-    pl: 'Urugwaj'
+    pl: 'Urugwaju'
   },
   Montevideo: {
     en: 'Montevideo',
@@ -1881,7 +1881,7 @@ export const countryTranslations = {
   },
   Uzbekistan: {
     en: 'Uzbekistan',
-    pl: 'Uzbekistan'
+    pl: 'Uzbekistanu'
   },
   Tashkent: {
     en: 'Tashkent',
@@ -1897,7 +1897,7 @@ export const countryTranslations = {
   },
   'Venezuela (Bolivarian Republic of)': {
     en: 'Venezuela',
-    pl: 'Wenezuela'
+    pl: 'Wenezueli'
   },
   Caracas: {
     en: 'Caracas',
@@ -1905,7 +1905,7 @@ export const countryTranslations = {
   },
   'Viet Nam': {
     en: 'Vietnam',
-    pl: 'Wietnam'
+    pl: 'Wietnamu'
   },
   Hanoi: {
     en: 'Hanoi',
@@ -1913,7 +1913,7 @@ export const countryTranslations = {
   },
   'Wallis and Futuna': {
     en: 'Wallis and Futuna',
-    pl: 'Wallis i Futuna'
+    pl: 'Wallis i Futuny'
   },
   'Mata-Utu': {
     en: 'Mata-Utu',
@@ -1921,7 +1921,7 @@ export const countryTranslations = {
   },
   'Western Sahara': {
     en: 'Western Sahara',
-    pl: 'Sahara Zachodnia'
+    pl: 'Sahary Zachodniej'
   },
   'El Aaiún': {
     en: 'El Aaiún',
@@ -1929,7 +1929,7 @@ export const countryTranslations = {
   },
   Yemen: {
     en: 'Yemen',
-    pl: 'Jemen'
+    pl: 'Jemenu'
   },
   "Sana'a": {
     en: "Sana'a",
@@ -1937,11 +1937,11 @@ export const countryTranslations = {
   },
   Zambia: {
     en: 'Zambia',
-    pl: 'Zambia'
+    pl: 'Zambii'
   },
   Lusaka: {
     en: 'Lusaka',
-    pl: 'Lusaka'
+    pl: 'Lusaki'
   },
   Zimbabwe: {
     en: 'Zimbabwe',

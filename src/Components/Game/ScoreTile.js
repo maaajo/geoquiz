@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const ScoreTile = ({ number, option }) => {
+const ScoreTile = ({ number, option, text }) => {
   const popVariants = {
     start: { scale: 0 },
     end: { scale: 1 }
@@ -17,9 +17,7 @@ const ScoreTile = ({ number, option }) => {
       } text-white flex flex-col justify-center items-center w-20 h-16 rounded-lg shadow-lg mr-2`}
     >
       <p className="font-semibold text-2xl ">{number}</p>
-      <p className="font-medium text-sm">
-        {option === 'good' ? 'correct' : 'wrong'}
-      </p>
+      <p className="font-medium text-sm">{text}</p>
     </motion.div>
   );
 };
