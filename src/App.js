@@ -80,12 +80,16 @@ class App extends React.Component {
             <Route
               exact
               path="/"
-              render={props => <InitialScreen {...props} />}
+              render={props => (
+                <InitialScreen {...props} language={this.state.language} />
+              )}
             />
             <Route
               exact
               path="/:gameType"
-              render={props => <GameOptions {...props} />}
+              render={props => (
+                <GameOptions {...props} language={this.state.language} />
+              )}
             />
             <Route
               exact

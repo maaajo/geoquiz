@@ -1,5 +1,6 @@
 import React from 'react';
 import { countryTranslations } from '../../Translations/countryTranslations';
+import { appTranslations } from '../../Translations/appTranslations';
 import { AiFillCheckCircle, AiFillCloseCircle } from 'react-icons/ai';
 import { motion } from 'framer-motion';
 
@@ -102,11 +103,12 @@ const GameScreen = ({
   return (
     <>
       <h3 className="screen-header text-left p-0 mb-0 pb-1 border-b-2 border-dashed border-grey">
-        Question: {currentQuestionNumber} / {numberOfQuestions + 1}
+        {appTranslations.gameScreen.header[language]}: {currentQuestionNumber} /{' '}
+        {numberOfQuestions + 1}
       </h3>
       <p className="my-10 text-white tracking-custom text-xl text-left font-semibold">
-        {`What is the ${
-          gameType.toLowerCase() === 'capitals' ? 'capital' : 'flag'
+        {`${appTranslations.gameScreen.question[language]} ${
+          appTranslations.gameScreen.options[gameType.toLowerCase()][language]
         } of `}
         <span>{countryNameTranslated}</span>?
       </p>

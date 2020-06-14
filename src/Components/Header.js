@@ -49,7 +49,7 @@ const Header = ({ handleLanguageChange, language }) => {
           </StyledButton>
         </div>
       </section>
-      <StyledH1 animate={{ fontSize: '36px', paddingTop: '16px' }}>
+      <StyledH1 animate={{ fontSize: '40px', paddingTop: '16px' }}>
         <Link to="/">GeoQuiz</Link>
       </StyledH1>
     </StyledHeader>

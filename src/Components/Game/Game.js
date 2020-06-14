@@ -11,6 +11,7 @@ import {
 } from '../../Utils/gameUtils';
 import GameScreen from './GameScreen';
 import ScoreScreen from './ScoreScreen';
+import Loading from './Loading';
 import { motion } from 'framer-motion';
 
 class Game extends React.Component {
@@ -301,7 +302,7 @@ class Game extends React.Component {
         transition={{ duration: 0.3 }}
         className="mx-8"
       >
-        {this.state.isLoading ? <p>Loading</p> : null}
+        {this.state.isLoading ? <Loading /> : null}
         {this.state.gameStart ? (
           <GameScreen
             gameType={this.props.match.params.gameType}
