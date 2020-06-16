@@ -35,8 +35,8 @@ class Game extends React.Component {
       startGameTimestamp: Date.now(),
       stopGameTimestamp: ''
     };
-    this.answerDelay = 600;
-    this.handleUserAnswerThrottled = throttle(this.handleUserAnswer, 600);
+    this.answerDelay = 850;
+    this.handleUserAnswerThrottled = throttle(this.handleUserAnswer, 850);
   }
 
   calculateGameScore(correctAnswers, questionNumber) {

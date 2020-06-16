@@ -70,7 +70,7 @@ const capitalButtonContent = (answerNumber, text, buttonHighlight) => (
     data-user-answer={answerNumber}
     className="flex justify-between items-center mx-6 font-medium"
   >
-    <span data-user-answer={answerNumber} className="text-base">
+    <span data-user-answer={answerNumber} className="text-base truncate">
       {text}
     </span>
     {buttonHighlight}
@@ -135,8 +135,8 @@ const GameScreen = ({
           return (
             <button
               type="button"
-              className={`${getButtonClassNames(gameType, buttonHighlight)} ${
-                answerPosted ? 'cursor-not-allowed' : null
+              className={`${getButtonClassNames(gameType, buttonHighlight)}${
+                answerPosted ? ' cursor-not-allowed' : ''
               }`}
               key={index}
               style={getButtonStyle(gameType, currentAnswer)}
