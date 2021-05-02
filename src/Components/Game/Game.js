@@ -12,7 +12,6 @@ import {
 import GameScreen from './GameScreen';
 import ScoreScreen from './ScoreScreen';
 import Loading from './Loading';
-import { motion } from 'framer-motion';
 
 class Game extends React.Component {
   constructor(props) {
@@ -295,13 +294,7 @@ class Game extends React.Component {
 
   render() {
     return (
-      <motion.section
-        initial={{ x: 1000 }}
-        animate={{ x: 0 }}
-        exit={{ x: -1000 }}
-        transition={{ duration: 0.3 }}
-        className="mx-8"
-      >
+      <section className="mx-8">
         {this.state.isLoading ? <Loading /> : null}
         {this.state.gameStart ? (
           <GameScreen
@@ -324,7 +317,7 @@ class Game extends React.Component {
             language={this.props.language}
           />
         ) : null}
-      </motion.section>
+      </section>
     );
   }
 }

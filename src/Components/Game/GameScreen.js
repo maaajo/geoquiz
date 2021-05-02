@@ -2,7 +2,6 @@ import React from 'react';
 import { countryTranslations } from '../../Translations/countryTranslations';
 import { appTranslations } from '../../Translations/appTranslations';
 import { AiFillCheckCircle, AiFillCloseCircle } from 'react-icons/ai';
-import { motion } from 'framer-motion';
 
 const getAnswerButtonHighlight = (
   buttonAnswer,
@@ -15,18 +14,18 @@ const getAnswerButtonHighlight = (
       case 'capitals':
         if (buttonAnswer.toLowerCase() === answer.toLowerCase()) {
           return (
-            <motion.span initial={{ scale: 0 }} animate={{ scale: 1 }}>
+            <span>
               <AiFillCheckCircle
                 size="20px"
                 className="inline text-lightGreen"
               />
-            </motion.span>
+            </span>
           );
         }
         return (
-          <motion.span initial={{ scale: 0 }} animate={{ scale: 1 }}>
+          <motion>
             <AiFillCloseCircle size="20px" className="inline text-red" />
-          </motion.span>
+          </motion>
         );
       case 'flags':
         if (buttonAnswer.toLowerCase() === answer.toLowerCase()) {

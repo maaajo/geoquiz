@@ -1,12 +1,11 @@
 import React from 'react';
 import OptionButton from './OptionButton';
 import { gameTypes } from '../GameSettings/gameSettings';
-import { motion } from 'framer-motion';
 import { appTranslations } from '../Translations/appTranslations';
 
 function InitialScreen({ language }) {
   return (
-    <motion.section
+    <section
       initial={{ x: 1000 }}
       animate={{ x: 0 }}
       exit={{ x: -1000 }}
@@ -25,7 +24,7 @@ function InitialScreen({ language }) {
           />
         ))}
       </div>
-    </motion.section>
+    </section>
   );
 }
 
