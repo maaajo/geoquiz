@@ -1,14 +1,8 @@
 import React from 'react';
 import OptionButton from './OptionButton';
-import tw from 'twin.macro';
-import styled from 'styled-components';
 import { gameTypes } from '../GameSettings/gameSettings';
 import { motion } from 'framer-motion';
 import { appTranslations } from '../Translations/appTranslations';
-
-const StyledDiv = styled.div`
-  ${tw`flex justify-center`}
-`;
 
 function InitialScreen({ language }) {
   return (
@@ -21,7 +15,7 @@ function InitialScreen({ language }) {
       <h3 className="screen-header">
         {appTranslations.homeScreen.header[language]}
       </h3>
-      <StyledDiv>
+      <div className="flex justify-center">
         {gameTypes.map(({ content, datasetValue }) => (
           <OptionButton
             key={content}
@@ -30,7 +24,7 @@ function InitialScreen({ language }) {
             urlParam={content.toLowerCase()}
           />
         ))}
-      </StyledDiv>
+      </div>
     </motion.section>
   );
 }

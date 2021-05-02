@@ -1,12 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import tw from 'twin.macro';
-import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-
-const StyledLink = styled(Link)`
-  ${tw`flex justify-center items-center`}
-`;
 
 const OptionButton = ({
   content = '',
@@ -14,14 +8,16 @@ const OptionButton = ({
   urlParam = '',
 }) => {
   return (
-    <StyledLink
+    <Link
       to={`/${urlParam}`}
       className={
-        buttonStyle === 'rectangle' ? 'button-rectangle' : 'button-wide'
+        buttonStyle === 'rectangle'
+          ? 'button-rectangle flex justify-center items-center'
+          : 'button-wide flex justify-center items-center'
       }
     >
       <span>{content}</span>
-    </StyledLink>
+    </Link>
   );
 };
 
