@@ -24,7 +24,7 @@ class App extends React.Component {
       gameScreen: false,
       gameOption: '',
       area: '',
-      language: 'en'
+      language: 'en',
     };
 
     this.handleGameOptionClick = this.handleGameOptionClick.bind(this);
@@ -37,7 +37,7 @@ class App extends React.Component {
     this.setState({
       area: e.target.dataset.area,
       areaSelectionScreen: false,
-      gameScreen: true
+      gameScreen: true,
     });
   }
 
@@ -45,7 +45,7 @@ class App extends React.Component {
     this.setState({
       gameOption: e.target.dataset.gameOption,
       initialScreen: false,
-      areaSelectionScreen: true
+      areaSelectionScreen: true,
     });
   }
 
@@ -55,13 +55,13 @@ class App extends React.Component {
       area: '',
       areaSelectionScreen: false,
       initialScreen: true,
-      gameScreen: false
+      gameScreen: false,
     });
   }
 
   handleLanguageChange(e) {
     this.setState({
-      language: e.target.dataset.language
+      language: e.target.dataset.language,
     });
   }
 
@@ -80,21 +80,21 @@ class App extends React.Component {
             <Route
               exact
               path="/"
-              render={props => (
+              render={(props) => (
                 <InitialScreen {...props} language={this.state.language} />
               )}
             />
             <Route
               exact
               path="/:gameType"
-              render={props => (
+              render={(props) => (
                 <GameOptions {...props} language={this.state.language} />
               )}
             />
             <Route
               exact
               path="/:gameType/:gameArea"
-              render={props => (
+              render={(props) => (
                 <Game {...props} language={this.state.language} />
               )}
             />

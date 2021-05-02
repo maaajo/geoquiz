@@ -11,7 +11,7 @@ const StyledLink = styled(Link)`
 const OptionButton = ({
   content = '',
   buttonStyle = 'rectangle',
-  urlParam = ''
+  urlParam = '',
 }) => {
   return (
     <StyledLink
@@ -29,7 +29,7 @@ OptionButton.propTypes = {
   onClick: PropTypes.func,
   content: PropTypes.string.isRequired,
   datasetName: PropTypes.string,
-  datasetValue: PropTypes.string
+  datasetValue: PropTypes.string,
 };
 
 export default OptionButton;

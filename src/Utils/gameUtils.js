@@ -6,7 +6,7 @@ export const removeItemFromArray = (arr, pos) => {
   return arr.filter((_, index) => index !== pos);
 };
 
-export const shuffleArray = arr => {
+export const shuffleArray = (arr) => {
   const arrCopy = arr.slice();
   for (let i = arrCopy.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -23,6 +23,6 @@ export const roundNumber = (number, decimalPlaces = 2) => {
   );
 };
 
-export const toProperCase = word => {
+export const toProperCase = (word) => {
   return word.slice(0, 1).toUpperCase() + word.slice(1).toLowerCase();
 };

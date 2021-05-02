@@ -7,7 +7,7 @@ import {
   generateRandomNumber,
   removeItemFromArray,
   shuffleArray,
-  roundNumber
+  roundNumber,
 } from '../../Utils/gameUtils';
 import GameScreen from './GameScreen';
 import ScoreScreen from './ScoreScreen';
@@ -33,7 +33,7 @@ class Game extends React.Component {
       correctCountries: [],
       wrongCountries: [],
       startGameTimestamp: Date.now(),
-      stopGameTimestamp: ''
+      stopGameTimestamp: '',
     };
     this.answerDelay = 850;
     this.handleUserAnswerThrottled = throttle(this.handleUserAnswer, 850);
@@ -59,16 +59,16 @@ class Game extends React.Component {
     }
     return await Promise.all([
       axios.get(apiEndPointSelected),
-      axios.get(apiEndPointAll)
+      axios.get(apiEndPointAll),
     ]);
   }
 
   async componentDidMount() {
     try {
-      this.setState(currState => ({ isLoading: !currState.isLoading }));
+      this.setState((currState) => ({ isLoading: !currState.isLoading }));
       const geoData = await this.getData(this.props.match.params.gameArea);
-      this.setState(currState => ({
-        isLoading: !currState.isLoading
+      this.setState((currState) => ({
+        isLoading: !currState.isLoading,
       }));
       let dataUserArea;
       let dataWorld;
@@ -111,12 +111,12 @@ class Game extends React.Component {
     if (gameOption === 'capitals') {
       return gameData.map(({ name, capital }) => ({
         name,
-        question: capital ? capital : name
+        question: capital ? capital : name,
       }));
     }
     return gameData.map(({ name, flag }) => ({
       name,
-      question: flag ? flag : 'https://placeholder.pics/svg/100'
+      question: flag ? flag : 'https://placeholder.pics/svg/100',
     }));
   }
 
@@ -146,20 +146,20 @@ class Game extends React.Component {
     return gameData[gameDataPos];
   }
 
-  startDelayedRound = delay => {
+  startDelayedRound = (delay) => {
     return setTimeout(() => {
       this.handleGameNextRound();
       this.setState({ answersUpdated: true });
     }, delay);
   };
 
-  handleUserAnswer = e => {
+  handleUserAnswer = (e) => {
     const userAnswer = this.state.answers.filter(
       ({ answerNumber }) =>
         answerNumber === parseInt(e.target.dataset.userAnswer)
     )[0].question;
     const correctAnswer = this.answer;
-    this.setState(currentState => {
+    this.setState((currentState) => {
       return {
         userAnswer,
         answersUpdated: false,
@@ -171,25 +171,25 @@ class Game extends React.Component {
               country: correctAnswer.name,
               userAnswer,
               correctAnswer: correctAnswer.question,
-              answers: currentState.answers.map(item => item.question)
-            }
-          }
-        ]
+              answers: currentState.answers.map((item) => item.question),
+            },
+          },
+        ],
       };
     });
     if (userAnswer.toLowerCase() === correctAnswer.question.toLowerCase()) {
-      this.setState(currentState => {
+      this.setState((currentState) => {
         return {
           correctCountries: currentState.correctCountries.concat(
             correctAnswer.name
           ),
-          correctAnswers: currentState.correctAnswers + 1
+          correctAnswers: currentState.correctAnswers + 1,
         };
       });
       this.timeoutId = this.startDelayedRound(this.answerDelay);
     } else {
-      this.setState(currentState => ({
-        wrongCountries: currentState.wrongCountries.concat(correctAnswer.name)
+      this.setState((currentState) => ({
+        wrongCountries: currentState.wrongCountries.concat(correctAnswer.name),
       }));
       this.timeoutId = this.startDelayedRound(this.answerDelay);
     }
@@ -210,7 +210,7 @@ class Game extends React.Component {
         }
         return undefined;
       })
-      .filter(item => item !== undefined)[0];
+      .filter((item) => item !== undefined)[0];
     const otherAnswers = this.drawGameBadAnswers(
       answersNr - 1,
       gameDataAll,
@@ -218,7 +218,7 @@ class Game extends React.Component {
     );
     const allAnswers = [
       ...otherAnswers,
-      gameAnswer
+      gameAnswer,
     ].map(({ question }, index) => ({ answerNumber: index, question }));
     const allAnswersRandom = shuffleArray(allAnswers);
     return [gameAnswer, allAnswersRandom, gameDataWithoutAnswer];
@@ -232,7 +232,7 @@ class Game extends React.Component {
     );
     this.gameArrayRemained = newGameData;
     this.answer = gameAnswer;
-    this.setState(currState => ({
+    this.setState((currState) => ({
       answers: allAnswers,
       userAnswer: '',
       answerPosted: false,
@@ -244,12 +244,12 @@ class Game extends React.Component {
         )
       ),
       gameStart: true,
-      gameStop: false
+      gameStop: false,
     }));
   }
 
   stopRound() {
-    this.setState(currState => ({
+    this.setState((currState) => ({
       gameStart: !currState.gameStart,
       gameStop: !currState.gameStop,
       answerPosted: false,
@@ -261,7 +261,7 @@ class Game extends React.Component {
         )
       ),
       answers: [],
-      stopGameTimestamp: Date.now()
+      stopGameTimestamp: Date.now(),
     }));
   }
 
@@ -277,7 +277,7 @@ class Game extends React.Component {
     if (onlyBadOnes) {
       this.gameArrayRemained = this.gamePreparedData
         .slice()
-        .filter(item => this.state.wrongCountries.includes(item.name));
+        .filter((item) => this.state.wrongCountries.includes(item.name));
       this.numberOfQuestions = this.gameArrayRemained.length - 1;
     } else {
       this.gameArrayRemained = this.gamePreparedData.slice();
@@ -288,7 +288,7 @@ class Game extends React.Component {
       correctAnswers: 0,
       correctCountries: [],
       wrongCountries: [],
-      userGameHistory: []
+      userGameHistory: [],
     });
     this.handleGameNextRound();
   };

@@ -58,7 +58,7 @@ const getButtonStyle = (gameType, currentAnswer) => {
     case 'flags':
       return {
         backgroundImage: `url(${currentAnswer})`,
-        flexBasis: '43%'
+        flexBasis: '43%',
       };
     default:
       return 'button-wide w-full';
@@ -97,7 +97,7 @@ const GameScreen = ({
   answers,
   answerPosted,
   correctAnswer,
-  handleUserAnswerThrottled
+  handleUserAnswerThrottled,
 }) => {
   const countryNameTranslated = countryTranslations[countryName][language];
   return (

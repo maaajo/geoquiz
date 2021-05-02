@@ -2,44 +2,44 @@ export const gameTypes = [
   {
     content: 'Capitals',
     datasetName: 'game-option',
-    datasetValue: 'capitals'
+    datasetValue: 'capitals',
   },
   {
     content: 'Flags',
     datasetName: 'game-option',
-    datasetValue: 'flags'
-  }
+    datasetValue: 'flags',
+  },
 ];
 
 export const gameRegions = [
   {
     content: 'Europe',
     datasetName: 'area',
-    datasetValue: 'europe'
+    datasetValue: 'europe',
   },
   {
     content: 'Americas',
     datasetName: 'area',
-    datasetValue: 'americas'
+    datasetValue: 'americas',
   },
   {
     content: 'Africa',
     datasetName: 'area',
-    datasetValue: 'africa'
+    datasetValue: 'africa',
   },
   {
     content: 'Asia',
     datasetName: 'area',
-    datasetValue: 'asia'
+    datasetValue: 'asia',
   },
   {
     content: 'Oceania',
     datasetName: 'area',
-    datasetValue: 'oceania'
+    datasetValue: 'oceania',
   },
   {
     content: 'World',
     datasetName: 'area',
-    datasetValue: 'world'
-  }
+    datasetValue: 'world',
+  },
 ];

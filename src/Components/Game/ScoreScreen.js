@@ -8,11 +8,11 @@ const ScoreScreen = ({
   correctAnswers,
   wrongCountries,
   restartGame,
-  language
+  language,
 }) => {
   const popVariants = {
     start: { scale: 0 },
-    end: { scale: 1 }
+    end: { scale: 1 },
   };
 
   return (

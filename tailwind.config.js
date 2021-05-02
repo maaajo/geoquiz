@@ -1,5 +1,5 @@
 module.exports = {
-  purge: ['./**/*.html', './**/*.js'],
+  purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   theme: {
     colors: {
       white: '#FFFFFF',
@@ -9,18 +9,18 @@ module.exports = {
       blue: '#284B63',
       brown: '#525252',
       darkBrown: '#333333',
-      grey: '#D9D9D9'
+      grey: '#D9D9D9',
     },
     extend: {
       fontFamily: {
         logo: ['Hind Siliguri', 'Verdana', 'sans-serif'],
-        body: ['Work Sans', 'Verdana', 'sans-serif']
+        body: ['Work Sans', 'Verdana', 'sans-serif'],
       },
       letterSpacing: {
-        custom: `-1.1px`
-      }
-    }
+        custom: `-1.1px`,
+      },
+    },
   },
   variants: {},
-  plugins: []
+  plugins: [],
 };

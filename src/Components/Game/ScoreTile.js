@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 const ScoreTile = ({ number, option, text }) => {
   const popVariants = {
     start: { scale: 0 },
-    end: { scale: 1 }
+    end: { scale: 1 },
   };
   return (
     <motion.div
