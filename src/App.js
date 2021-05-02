@@ -2,18 +2,11 @@ import React from 'react';
 import InitialScreen from './Components/InitialScreen';
 import GameOptions from './Components/GameOptions';
 import Game from './Components/Game/Game';
-import tw from 'twin.macro';
-import styled from 'styled-components';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 import { Switch, Route, withRouter } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import './Assets/styles.css';
-
-const StyledMain = styled.main`
-  padding-bottom: 70px;
-  ${tw`min-h-screen font-body bg-blue relative`}
-`;
 
 class App extends React.Component {
   constructor(props) {
@@ -67,7 +60,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <StyledMain className="App">
+      <main className="min-h-screen font-body bg-blue relative">
         <Header
           handleLanguageChange={this.handleLanguageChange}
           language={this.state.language}
@@ -101,7 +94,7 @@ class App extends React.Component {
           </Switch>
         </AnimatePresence>
         <Footer />
-      </StyledMain>
+      </main>
     );
   }
 }

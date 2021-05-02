@@ -36,7 +36,7 @@
 .button-rectangle:focus,
 .button-wide:active,
 .button-wide:focus {
-  @apply shadow-outline;
+  @apply outline-none ring border-blue;
 }
 
 .button-wide {
