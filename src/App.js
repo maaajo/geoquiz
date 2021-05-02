@@ -60,7 +60,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <main className="min-h-screen font-body bg-blue relative">
+      <main className="min-h-screen font-body text-4xl bg-blue relative">
         <Header
           handleLanguageChange={this.handleLanguageChange}
           language={this.state.language}
