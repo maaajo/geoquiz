@@ -5,7 +5,6 @@ import Game from './Components/Game/Game';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 import { Switch, Route, withRouter } from 'react-router-dom';
-import { AnimatePresence } from 'framer-motion';
 import './Assets/styles.css';
 
 class App extends React.Component {
@@ -65,34 +64,32 @@ class App extends React.Component {
           handleLanguageChange={this.handleLanguageChange}
           language={this.state.language}
         />
-        <AnimatePresence exitBeforeEnter>
-          <Switch
-            location={this.props.location}
-            key={this.props.location.pathname}
-          >
-            <Route
-              exact
-              path="/"
-              render={(props) => (
-                <InitialScreen {...props} language={this.state.language} />
-              )}
-            />
-            <Route
-              exact
-              path="/:gameType"
-              render={(props) => (
-                <GameOptions {...props} language={this.state.language} />
-              )}
-            />
-            <Route
-              exact
-              path="/:gameType/:gameArea"
-              render={(props) => (
-                <Game {...props} language={this.state.language} />
-              )}
-            />
-          </Switch>
-        </AnimatePresence>
+        <Switch
+          location={this.props.location}
+          key={this.props.location.pathname}
+        >
+          <Route
+            exact
+            path="/"
+            render={(props) => (
+              <InitialScreen {...props} language={this.state.language} />
+            )}
+          />
+          <Route
+            exact
+            path="/:gameType"
+            render={(props) => (
+              <GameOptions {...props} language={this.state.language} />
+            )}
+          />
+          <Route
+            exact
+            path="/:gameType/:gameArea"
+            render={(props) => (
+              <Game {...props} language={this.state.language} />
+            )}
+          />
+        </Switch>
         <Footer />
       </main>
     );
