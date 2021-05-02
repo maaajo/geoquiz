@@ -56,12 +56,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "babelMacros": {
-    "twin": {
-      "preset": "styled-components",
-      "config": "src/tailwind.config.js",
-      "autoCssProp": true
-    }
   }
 }
