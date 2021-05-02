@@ -5,7 +5,6 @@ import Game from './Components/Game/Game';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 import { Switch, Route, withRouter } from 'react-router-dom';
-import './Assets/styles.css';
 
 class App extends React.Component {
   constructor(props) {
