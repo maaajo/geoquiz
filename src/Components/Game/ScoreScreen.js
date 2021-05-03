@@ -10,7 +10,7 @@ const ScoreScreen = ({
   language,
 }) => {
   return (
-    <section transition={{ duration: 0.3 }}>
+    <section>
       <h3 className="screen-header mb-0">
         {appTranslations.scoreScreen.header[language]}
       </h3>

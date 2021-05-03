@@ -5,8 +5,7 @@ import { appTranslations } from '../Translations/appTranslations';
 
 function InitialScreen({ language }) {
   return (
-    <section
-    >
+    <section>
       <h3 className="screen-header">
         {appTranslations.homeScreen.header[language]}
       </h3>
