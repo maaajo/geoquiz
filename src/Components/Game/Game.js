@@ -8,10 +8,13 @@ import {
   removeItemFromArray,
   shuffleArray,
   roundNumber,
+  getPathValidity,
 } from '../../Utils/gameUtils';
 import GameScreen from './GameScreen';
 import ScoreScreen from './ScoreScreen';
 import Loading from './Loading';
+import NotFound from '../NotFound';
+import { useRouteMatch } from 'react-router-dom';
 
 class Game extends React.Component {
   constructor(props) {

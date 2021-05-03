@@ -26,3 +26,10 @@ export const roundNumber = (number, decimalPlaces = 2) => {
 export const toProperCase = (word) => {
   return word.slice(0, 1).toUpperCase() + word.slice(1).toLowerCase();
 };
+
+export const getPathValidity = (pathParam, pathOptions) => {
+  const filteredPathOptions = pathOptions.filter(
+    (pathOption) => pathOption.datasetValue === pathParam
+  );
+  return filteredPathOptions.length > 0;
+};
