@@ -1,11 +1,24 @@
 import React from 'react';
 import OptionButton from './OptionButton';
-import { gameRegions } from '../GameSettings/gameSettings';
+import { gameTypes, gameRegions } from '../GameSettings/gameSettings';
 import { toProperCase } from '../Utils/gameUtils';
 import { appTranslations } from '../Translations/appTranslations';
+import { useRouteMatch } from 'react-router-dom';
+import NotFound from './NotFound';
 
 function GameOptions(props) {
-  return (
+  const { params } = useRouteMatch();
+
+  const getPathValidity = (pathParam, pathOptions) => {
+    const filteredPathOptions = pathOptions.filter(
+      (pathOption) => pathOption.datasetValue === pathParam
+    );
+    return filteredPathOptions.length > 0;
+  };
+
+  const isPathValid = getPathValidity(params.gameType, gameTypes);
+
+  return isPathValid ? (
     <section>
       <h3 className="screen-header">{`${toProperCase(
         appTranslations.optionsScreen.title[props.match.params.gameType][
@@ -31,6 +44,8 @@ function GameOptions(props) {
         })}
       </div>
     </section>
+  ) : (
+    <NotFound />
   );
 }
 

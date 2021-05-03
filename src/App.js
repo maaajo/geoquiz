@@ -4,6 +4,7 @@ import GameOptions from './Components/GameOptions';
 import Game from './Components/Game/Game';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
+import NotFound from './Components/NotFound';
 import { Switch, Route, useLocation } from 'react-router-dom';
 
 export default function App() {
@@ -33,6 +34,7 @@ export default function App() {
           path="/:gameType/:gameArea"
           render={(props) => <Game {...props} language={language} />}
         />
+        <Route component={NotFound} />
       </Switch>
       <Footer />
     </main>
