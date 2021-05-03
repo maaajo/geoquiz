@@ -2,8 +2,8 @@ import React from 'react';
 
 const footerStyle = {
   height: '70px',
-  'border-top-left-radius': '300px 100px',
-  'border-top-right-radius': '300px 100px',
+  borderTopLeftRadius: '300px 100px',
+  borderTopRightRadius: '300px 100px',
 };
 
 const Footer = () => (

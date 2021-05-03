@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 const headerCustomStyle = {
   height: '120px',
-  'border-bottom-left-radius': '230px 145px',
-  'border-bottom-right-radius': '230px 145px',
+  borderBottomLeftRadius: '230px 145px',
+  borderBottomRightRadius: '230px 145px',
 };
 
 const Header = ({ handleLanguageChange, language }) => {
